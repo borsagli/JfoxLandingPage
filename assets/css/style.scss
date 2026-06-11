@@ -1,0 +1,172 @@
+$primary: #15E9BF;
+$dark: #000504;
+$light: #F5FFFD;
+$greyblue: #02171333;
+$lightgrey: #d3d3d363;
+$darkblue: #0c1614;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $dark;
+  min-height: 100vh;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+// ----- NAVBAR -----
+.site-nav {
+  border: 1px solid transparent;
+  margin: 1% 4% 0;
+  padding: 20px 32px;
+  border-radius: 999px;
+  background:
+    linear-gradient($dark, $darkblue) padding-box,
+    linear-gradient(90deg, $lightgrey, $darkblue, $lightgrey, $greyblue) border-box;
+
+  .navbar-logo img {
+    height: 36px;
+    width: auto;
+  }
+
+  .nav-link {
+    color: $light;
+    font-weight: 500;
+    font-size: 0.95rem;
+    white-space: nowrap;
+
+    &:hover {
+      color: $primary;
+    }
+    i { 
+      color: $primary;
+    }
+  }
+
+  // grupo botoes
+  .nav-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  // botoes lateral direita
+  .btn-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid $primary;
+    color: $light;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+}
+
+
+// ----- HERO -----
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5% 8%;
+  text-align: left;
+
+.btn-acess {
+  margin-top: 5%;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid $primary;
+    color: $light;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+
+  .hero-glow {
+    position: absolute;
+    top: -5px;
+    left: 80px;
+    z-index: 0;
+  }
+
+  .hero-glow-2 {
+    position: absolute;
+    top: 10px;
+    right: 570px;
+    z-index: 0;
+  }
+
+  .hero-glow-3 {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    z-index: 0;
+  }
+
+  .cert{
+    position: absolute;
+    top: 5%;
+    z-index: 0;
+  }
+  .hero-p {
+    color: $primary;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .hero-title {
+    color: $light;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+  }
+
+  .hero-text {
+    color: rgba($light, 0.7);
+    font-size: 1.2rem;
+    margin-bottom: 28px;
+  }
+
+  .ninja {
+    position: absolute;
+    transform: translateY(-40%) translateX(-5%);
+  }
+  .hero-stats {
+    margin-top: 32px;
+
+    .stat-number {
+      color: $light;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      color: rgba($light, 0.6);
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+  }
+}
