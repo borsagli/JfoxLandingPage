@@ -1,9 +1,12 @@
 $primary: #15E9BF;
+$darkerprimary: #037C64;
 $dark: #000504;
 $light: #F5FFFD;
 $greyblue: #02171333;
 $lightgrey: #d3d3d363;
 $darkblue: #0c1614;
+$border: #D9D9D9;
+$cardbg: #FBFBFB;
 
 * {
   margin: 0;
@@ -17,7 +20,8 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
-// ----- NAVBAR -----
+// -------------------- NAVBAR --------------------
+
 .site-nav {
   border: 1px solid transparent;
   margin: 1% 4% 0;
@@ -76,15 +80,14 @@ body {
 }
 
 
-// ----- HERO -----
-.hero {
+// -------------------- HERO --------------------
+.hero {  min-height: 100vh;
   position: relative;
   overflow: hidden;
-  padding: 3% 8%;
+  padding: 3% 8% 0;
   text-align: left;
-
   .btn-acess {
-    margin-top: 10%;
+    margin-top: 14%;
     display: inline-flex;
     align-items: center;
     border: 1px solid $primary;
@@ -171,4 +174,55 @@ body {
       margin-bottom: 0;
     }
   }
+}
+
+// -------------------- SEGUNDA SEÇÃO --------------------
+
+.body-section{
+  padding: 3% 8% 0;
+  text-align: center;
+  background-color: $light;
+  .body-section-p {
+    color: $darkerprimary;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+ a {
+    color: $darkerprimary;
+    text-decoration: none;
+  }
+
+  .body-section-title {
+    color: $dark;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 36px;
+  }
+
+  .card {
+  height: 100%;
+  min-height: 100px;
+  background-color: $cardbg;
+  border: 2px solid $border;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  img {
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
 }
