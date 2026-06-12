@@ -106,7 +106,7 @@ body {
   //brilhos
   .hero-glow {
     position: absolute;
-    top: 5px;
+    top: -10px;
     left: 80px;
     z-index: 0;
   }
@@ -152,7 +152,7 @@ body {
 
   .ninja {
     position: absolute;
-    transform: translateY(-80%) translateX(-5%);
+    transform: translateY(-70%) translateX(-5%);
   }
 
   .hero-stats {

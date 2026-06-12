@@ -82,7 +82,7 @@ body {
 }
 .hero .hero-glow {
   position: absolute;
-  top: 5px;
+  top: -10px;
   left: 80px;
   z-index: 0;
 }
@@ -120,7 +120,7 @@ body {
 }
 .hero .ninja {
   position: absolute;
-  transform: translateY(-80%) translateX(-5%);
+  transform: translateY(-70%) translateX(-5%);
 }
 .hero .hero-stats {
   margin-top: 32px;
