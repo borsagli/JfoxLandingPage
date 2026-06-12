@@ -5,7 +5,6 @@ $greyblue: #02171333;
 $lightgrey: #d3d3d363;
 $darkblue: #0c1614;
 
-
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +41,8 @@ body {
     &:hover {
       color: $primary;
     }
-    i { 
+
+    i {
       color: $primary;
     }
   }
@@ -80,11 +80,11 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 5% 8%;
+  padding: 3% 8%;
   text-align: left;
 
-.btn-acess {
-  margin-top: 5%;
+  .btn-acess {
+    margin-top: 10%;
     display: inline-flex;
     align-items: center;
     border: 1px solid $primary;
@@ -103,9 +103,10 @@ body {
     }
   }
 
+  //brilhos
   .hero-glow {
     position: absolute;
-    top: -5px;
+    top: 5px;
     left: 80px;
     z-index: 0;
   }
@@ -124,11 +125,11 @@ body {
     z-index: 0;
   }
 
-  .cert{
-    position: absolute;
-    top: 5%;
+  
+  .cert {
     z-index: 0;
   }
+
   .hero-p {
     color: $primary;
     font-weight: bold;
@@ -151,8 +152,9 @@ body {
 
   .ninja {
     position: absolute;
-    transform: translateY(-40%) translateX(-5%);
+    transform: translateY(-80%) translateX(-5%);
   }
+
   .hero-stats {
     margin-top: 32px;
 
