@@ -1,5 +1,7 @@
 $primary: #15E9BF;
+$lightprimary: #0AB493;
 $darkerprimary: #037C64;
+$mediumprimary: #06997C;
 $dark: #000504;
 $light: #F5FFFD;
 $greyblue: #02171333;
@@ -7,6 +9,9 @@ $lightgrey: #d3d3d363;
 $darkblue: #0c1614;
 $border: #D9D9D9;
 $cardbg: #FBFBFB;
+$darkfont: #010F0C;
+$lightfont: #5a5a5a;
+$marker: #EF4444;
 
 * {
   margin: 0;
@@ -81,13 +86,16 @@ body {
 
 
 // -------------------- HERO --------------------
-.hero {  min-height: 100vh;
+.hero {
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   padding: 3% 8% 0;
   text-align: left;
+
   .btn-acess {
-    margin-top: 14%;
+    position: absolute;
+    margin-top: 2%;
     display: inline-flex;
     align-items: center;
     border: 1px solid $primary;
@@ -96,7 +104,7 @@ body {
     padding: 10px 18px;
     border-radius: 999px;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     white-space: nowrap;
     transition: color 0.2s ease;
 
@@ -109,14 +117,14 @@ body {
   //brilhos
   .hero-glow {
     position: absolute;
-    top: -10px;
+    top: 5px;
     left: 80px;
     z-index: 0;
   }
 
   .hero-glow-2 {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 570px;
     z-index: 0;
   }
@@ -128,7 +136,7 @@ body {
     z-index: 0;
   }
 
-  
+
   .cert {
     z-index: 0;
   }
@@ -155,33 +163,33 @@ body {
 
   .ninja {
     position: absolute;
-    transform: translateY(-70%) translateX(-5%);
+    transform: translateY(-65%) translateX(-5%);
   }
 
   .hero-stats {
-    margin-top: 32px;
-
+    margin-top: 2%;
     .stat-number {
       color: $light;
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 4px;
     }
 
     .stat-label {
       color: rgba($light, 0.6);
-      font-size: 0.9rem;
-      margin-bottom: 0;
+      font-size: 0.8rem;
+      margin: 0;
     }
   }
 }
 
-// -------------------- SEGUNDA SEÇÃO --------------------
+// -------------------- PRIMEIRA SEÇÃO --------------------
 
-.body-section{
+.body-section {
   padding: 3% 8% 0;
   text-align: center;
   background-color: $light;
+
   .body-section-p {
     color: $darkerprimary;
     font-weight: bold;
@@ -189,40 +197,165 @@ body {
     margin-bottom: 12px;
   }
 
- a {
+  a {
     color: $darkerprimary;
     text-decoration: none;
   }
 
   .body-section-title {
-    color: $dark;
+    color: $darkfont;
     font-weight: 700;
     font-size: 2.2rem;
     margin-bottom: 36px;
   }
 
   .card {
-  height: 100%;
-  min-height: 100px;
-  background-color: $cardbg;
-  border: 2px solid $border;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  img {
-    max-width: 100%;
-    max-height: 80px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    min-height: 100px;
+    background-color: $cardbg;
+    border: 2px solid $border;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    img {
+      max-width: 100%;
+      max-height: 80px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
-  &:hover {
-    transform: translateY(-5px);
+
+  .cards-section:nth-of-type(2) {
+    margin-right: -50px;
+  }
+
+  .cards-section:nth-of-type(3) {
+    margin-left: -50px;
   }
 }
+
+// -------------------- SEGUNDA SEÇÃO --------------------
+
+.section-2 {
+  background: $light;
+  padding: 6% 8% 0;
+
+  .section-2-p {
+    color: $darkerprimary;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: $mediumprimary;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  .section-2-title {
+    color: $darkfont;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+  }
+
+  .section-2-text {
+    color: $lightfont;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+
+  ul li {
+    color: $darkfont;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  ul li::marker {
+    color: $marker;
+    font-size: 20px;
+  }
+
+  .card {
+    margin-left: 16px;
+    height: 100%;
+    min-height: 100px;
+    background-color: $cardbg;
+    border: 2px solid $border;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .card-title {
+      color: $darkfont;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .card-text {
+      color: $lightfont;
+      font-size: 1rem;
+      margin-top: 16px;
+    }
+  }
+
+  .btn-acess {
+    background:
+      linear-gradient(90deg, $darkerprimary, $lightprimary) border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: $light;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+  }
+
+  .notification {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $light;
+    color: $dark;
+    font-size: 1.3rem;
+    border-radius: 999px;
+    border: 2px solid $border;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 23px;
+      right: 6px;
+      width: 12px;
+      height: 12px;
+      background-color: $mediumprimary;
+      border-radius: 999px;
+    }
+  }
 
 }
