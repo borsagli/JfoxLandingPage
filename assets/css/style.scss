@@ -169,6 +169,7 @@ body {
 
   .hero-stats {
     margin-top: 2%;
+
     .stat-number {
       color: $light;
       font-weight: 700;
@@ -249,7 +250,7 @@ body {
 
 .section-2 {
   background: $light;
-  padding: 6% 8% 0;
+  padding: 6% 8% 4%;
 
   .section-2-p {
     color: $darkerprimary;
@@ -311,7 +312,7 @@ body {
     .card-text {
       color: $lightfont;
       font-size: 1.25rem;
-    margin-bottom: 16px;
+      margin-bottom: 16px;
     }
   }
 
@@ -361,4 +362,91 @@ body {
   }
 }
 
-// -------------------- SEGUNDA SEÇÃO --------------------
+
+// -------------------- TERCEIRA SEÇÃO --------------------
+
+.section-3 {
+  background: $lightbg;
+  padding: 3% 8% 0;
+  text-align: center;
+
+  .section-3-p {
+    color: $darkerprimary;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: $mediumprimary;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  .section-3-title {
+    color: $darkfont;
+    font-weight: 700;
+    font-size: 2.5rem;
+
+  }
+
+  .section-3-text {
+    color: $lightfont;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+
+  .card {
+    margin-left: 16px;
+    height: 100%;
+    width: 100%;
+    min-height: 100px;
+    background-color: $cardbg;
+    border: 2px solid $border;
+    border-radius: 12px;
+    padding: 0.5% 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card-title {
+      background: linear-gradient(180deg, $darkerprimary, $lightprimary);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 1000;
+      font-size: 4rem;
+      margin-bottom: 0px;
+
+    }
+
+    .card-text {
+      color: $dark;
+      font-weight: 900;
+      font-size: 1.25rem;
+      margin-bottom: 0px;
+    }
+
+    .card-subtext {
+      color: $lightfont;
+      font-size: 1rem;
+      margin-bottom: 0px;
+      padding: 0 2%;
+    }
+  }
+
+  /*.btn-acess {
+    background:
+      linear-gradient(90deg, $darkerprimary, $lightprimary) border-box;
+    display: flex;
+    color: $light;
+    text-decoration: none;
+    padding: 2.5% 5%;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+  }*/
+
+}
