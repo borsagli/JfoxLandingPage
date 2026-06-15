@@ -4,6 +4,7 @@ $darkerprimary: #037C64;
 $mediumprimary: #06997C;
 $dark: #000504;
 $light: #F5FFFD;
+$lightbg: #F3F5F7;
 $greyblue: #02171333;
 $lightgrey: #d3d3d363;
 $darkblue: #0c1614;
@@ -290,11 +291,12 @@ body {
   .card {
     margin-left: 16px;
     height: 100%;
+    width: 100%;
     min-height: 100px;
     background-color: $cardbg;
     border: 2px solid $border;
     border-radius: 12px;
-    padding: 20px;
+    padding: 5%;
     margin-bottom: 16px;
     display: flex;
     align-items: flex-start;
@@ -303,13 +305,13 @@ body {
     .card-title {
       color: $darkfont;
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 2.2rem;
     }
 
     .card-text {
       color: $lightfont;
-      font-size: 1rem;
-      margin-top: 16px;
+      font-size: 1.25rem;
+    margin-bottom: 16px;
     }
   }
 
@@ -322,7 +324,7 @@ body {
     align-items: center;
     color: $light;
     text-decoration: none;
-    padding: 8px 20px;
+    padding: 2.5% 5%;
     border-radius: 999px;
     font-weight: 600;
     font-size: 1.2rem;
@@ -357,5 +359,6 @@ body {
       border-radius: 999px;
     }
   }
-
 }
+
+// -------------------- SEGUNDA SEÇÃO --------------------

@@ -229,11 +229,12 @@ body {
 .section-2 .card {
   margin-left: 16px;
   height: 100%;
+  width: 100%;
   min-height: 100px;
   background-color: #FBFBFB;
   border: 2px solid #D9D9D9;
   border-radius: 12px;
-  padding: 20px;
+  padding: 5%;
   margin-bottom: 16px;
   display: flex;
   align-items: flex-start;
@@ -242,12 +243,12 @@ body {
 .section-2 .card .card-title {
   color: #010F0C;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 .section-2 .card .card-text {
   color: #5a5a5a;
-  font-size: 1rem;
-  margin-top: 16px;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
 }
 .section-2 .btn-acess {
   background: linear-gradient(90deg, #037C64, #0AB493) border-box;
@@ -257,7 +258,7 @@ body {
   align-items: center;
   color: #F5FFFD;
   text-decoration: none;
-  padding: 8px 20px;
+  padding: 2.5% 5%;
   border-radius: 999px;
   font-weight: 600;
   font-size: 1.2rem;
