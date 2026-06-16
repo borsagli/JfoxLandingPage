@@ -649,11 +649,13 @@ footer .items {
   justify-content: center;
 }
 footer ul {
+  text-align: left;
   list-style-type: none;
   padding: 0;
   line-height: 2;
   color: #F5FFFD;
   padding-right: 20%;
+  white-space: nowrap;
 }
 footer .contact {
   color: #F5FFFD;
@@ -665,4 +667,26 @@ footer .contact {
   justify-content: right;
   text-align: right;
   align-items: flex-end;
+}
+footer hr {
+  border: none;
+  border-top: 2px solid #15E9BF;
+  margin: 20px 0;
+}
+footer .copyright {
+  color: #F5FFFD;
+  font-size: 1rem;
+  margin-top: 12px;
+  text-align: left;
+  padding-right: 20%;
+}
+footer .design {
+  color: #F5FFFD;
+  font-size: 1rem;
+  margin-top: 12px;
+  text-align: right;
+}
+footer .design img {
+  padding-left: 0.8rem;
+  max-width: 5rem;
 }/*# sourceMappingURL=style.css.map */

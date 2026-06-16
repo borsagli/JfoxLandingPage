@@ -763,7 +763,8 @@ body {
 
 footer {
   padding: 4% 0% 4% 0%;
-text-align: right;
+  text-align: right;
+
   .img-footer {
     display: block;
     height: auto;
@@ -778,7 +779,7 @@ text-align: right;
   }
 
   .btn-footer {
-    margin-bottom:45%;
+    margin-bottom: 45%;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -800,27 +801,56 @@ text-align: right;
     justify-content: center;
 
   }
-  ul{
-     list-style-type: none;
-      padding: 0;
-      line-height: 2;
-      color: $light; 
-      padding-right: 20%;
 
+  ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+    color: $light;
+    padding-right: 20%;
+    white-space: nowrap;
   }
 
-  .contact{
+  .contact {
     color: $light;
     font-size: 1.3rem;
     margin-top: 12px;
     cursor: pointer;
     display: inline-flex;
-    gap: 8px;  
+    gap: 8px;
     justify-content: right;
     text-align: right;
     align-items: flex-end;
 
-    }
+  }
 
-  
+  hr {
+    border: none;
+    border-top: 2px solid $primary;
+    margin: 20px 0;
+  }
+
+  .copyright {
+    color: $light;
+    font-size: 1rem;
+    margin-top: 12px;
+    text-align: left;
+    padding-right: 20%;
+  }
+
+  .design{
+    color: $light;
+    font-size: 1rem;
+    margin-top: 12px;
+    text-align: right;
+
+
+
+    img{    
+      padding-left: 0.8rem;
+      max-width: 5rem;
+    }
+  }
+
 }
