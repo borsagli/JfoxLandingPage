@@ -15,7 +15,6 @@ $lighterfont: #010f0ccb;
 $lightfont: #5a5a5a;
 $marker: #EF4444;
 $subcardborder: #D9D9D9;
-$subcardbg: #F3F5F7;
 $darkcard: #0D1412;
 $lightdarkcard: #121A18;
 
@@ -84,7 +83,6 @@ body {
     transition: color 0.2s ease;
 
     &:hover {
-      border-color: $primary;
       color: $primary;
     }
   }
@@ -541,7 +539,7 @@ body {
       justify-content: center;
       align-items: center;
       width: fit-content;
-      background-color: $subcardbg;
+      background-color: $lightbg;
       border: 1px solid $subcardborder;
       border-radius: 8px;
       padding: 0.4rem 0.8rem;
@@ -588,12 +586,12 @@ body {
   //CARDS 
   .card {
     width: 100%;
-    // min-height: 220px;
     background: $darkcard;
-    border-radius: 14px;
+    border-radius: 8px;
     overflow: hidden;
     display: grid;
     grid-template-columns: 33% 3fr;
+    margin-bottom: 6%;
   }
 
   // painel esquerdo do card
@@ -619,7 +617,6 @@ body {
     z-index: 2;
   }
 
-  //icone
   .icon-wrap {
     z-index: 1;
   }
@@ -636,7 +633,7 @@ body {
   h2 {
     margin: 0 0 10px;
     color: $light;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
   }
 
@@ -649,4 +646,181 @@ body {
     font-weight: 500;
   }
 
+}
+
+// ------------------ SEÇAO 5 --------------------
+
+.section-5 {
+  padding: 4% 0% 4% 0%;
+  background-color: $lightbg;
+  text-align: center;
+
+  .section-5-p {
+    background: linear-gradient(180deg, $darkerprimary, $lightprimary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  .section-5-title {
+    padding: 0% 5% 0% 5%;
+    font-weight: 900;
+    color: $dark;
+    font-weight: 700;
+    font-size: 3.3rem;
+  }
+
+  .section-5-text {
+    padding: 0.5% 10% 0% 10%;
+    color: $lightfont;
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: $mediumprimary;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  //cards
+  .card {
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    border-radius: 18px 18px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .card-title {
+      font-weight: 900;
+      color: $dark;
+      font-size: 1.7rem;
+    }
+
+    .card-text {
+      color: $lightfont;
+      font-size: 1rem;
+      flex-grow: 1;
+    }
+
+    .container-img {
+      position: relative;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .base,
+    .overlay {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .base {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      max-height: 90%;
+      z-index: 10;
+      border-radius: 4px;
+    }
+
+    .btn-acess {
+      background: linear-gradient(90deg, $darkerprimary, $lightprimary) border-box;
+      color: $light;
+      text-decoration: none;
+      padding: 3% 6%;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+
+      i {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: stretch;
+  }
+
+}
+
+
+// ------------------ FOOTER --------------------
+
+footer {
+  padding: 4% 0% 4% 0%;
+text-align: right;
+  .img-footer {
+    display: block;
+    height: auto;
+    margin-bottom: 7%;
+  }
+
+  .footer-text {
+    text-align: left;
+    color: $lightfont;
+    font-size: 1rem;
+    padding-right: 20%;
+  }
+
+  .btn-footer {
+    margin-bottom:45%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid $primary;
+    color: $light;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 16px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  .items {
+    display: flex;
+    justify-content: center;
+
+  }
+  ul{
+     list-style-type: none;
+      padding: 0;
+      line-height: 2;
+      color: $light; 
+      padding-right: 20%;
+
+  }
+
+  .contact{
+    color: $light;
+    font-size: 1.3rem;
+    margin-top: 12px;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 8px;  
+    justify-content: right;
+    text-align: right;
+    align-items: flex-end;
+
+    }
+
+  
 }
