@@ -376,7 +376,7 @@ body {
 
 .section-3 {
   background: $lightbg;
-  padding: 3% 8%;
+  padding: 4% 8%;
   text-align: center;
 
   .section-3-p {
@@ -510,6 +510,7 @@ body {
     font-size: 1.2rem;
     display: inline-flex;
     align-items: center;
+    gap: 10px;
 
     i {
       margin-left: 8px;
@@ -839,15 +840,13 @@ footer {
     padding-right: 20%;
   }
 
-  .design{
+  .design {
     color: $light;
     font-size: 1rem;
     margin-top: 12px;
     text-align: right;
 
-
-
-    img{    
+    img {
       padding-left: 0.8rem;
       max-width: 5rem;
     }
