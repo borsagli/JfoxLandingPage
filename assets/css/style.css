@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,6 @@
 
 body {
   background: #000504;
-  min-height: 100vh;
   font-family: "Source Sans 3", sans-serif;
 }
 
@@ -52,29 +52,40 @@ body {
   color: #15E9BF;
 }
 
-.hero {
+/* criei essa classe pq o 100vh estava no hero, acredito que o mais correto seria estar em todo o conteúdo inicial,
+ ficava sobrando um pouco em baixo do tamanho total da tela, isso pq pegava o 100vh a partir da navbar */
+.viewport-height {
   min-height: 100vh;
-  position: relative;
   overflow: hidden;
-  padding: 3% 8% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  position: relative;
+  padding: 4% 0%;
   text-align: left;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero .hero-glow {
   position: absolute;
-  top: 5px;
-  left: 80px;
+  top: -2px;
+  left: 6%;
   z-index: 0;
 }
 .hero .hero-glow-2 {
   position: absolute;
-  top: 20px;
-  right: 570px;
+  top: 15px;
+  right: 40%;
   z-index: 0;
 }
 .hero .hero-glow-3 {
   position: absolute;
   top: 20px;
-  right: 80px;
+  right: 5%;
   z-index: 0;
 }
 .hero .cert {
@@ -99,7 +110,7 @@ body {
 }
 .hero .ninja {
   position: absolute;
-  transform: translateY(-65%) translateX(-5%);
+  transform: translateY(-70%) translateX(-5%);
 }
 .hero .hero-stats {
   margin-top: 2%;
@@ -116,8 +127,7 @@ body {
   margin: 0;
 }
 .hero .btn-acess {
-  position: absolute;
-  margin-top: 2%;
+  margin-top: 9%;
   display: inline-flex;
   align-items: center;
   border: 1px solid #15E9BF;
@@ -264,8 +274,8 @@ body {
   position: absolute;
   top: -28px;
   right: -28px;
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
