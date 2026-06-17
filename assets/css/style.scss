@@ -463,9 +463,7 @@ body {
     align-items: center;
     margin-bottom: 5%;
 
-    i {
-      margin-left: 8px;
-    }
+   
   }
 
   // ----------- card nova era salesforce ----------------
@@ -512,9 +510,7 @@ body {
     align-items: center;
     gap: 10px;
 
-    i {
-      margin-left: 8px;
-    }
+    
   }
 
   // cards laterais e logo jfox
@@ -523,7 +519,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 8% 0px;
+    margin: 6% 0px;
   }
 
   .subrow {
@@ -543,7 +539,7 @@ body {
       background-color: $lightbg;
       border: 1px solid $subcardborder;
       border-radius: 8px;
-      padding: 0.4rem 0.8rem;
+      padding: 0.6rem 0.8rem;
       white-space: nowrap;
       display: flex;
       font-size: 1rem;
@@ -746,9 +742,7 @@ body {
       align-items: center;
       margin-top: auto;
 
-      i {
-        margin-left: 8px;
-      }
+     
     }
   }
 
