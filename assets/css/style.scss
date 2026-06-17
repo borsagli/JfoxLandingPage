@@ -622,7 +622,7 @@ body {
     display: grid;
     place-content: center;
     text-align: center;
-    padding: 6%;
+    padding: 16px; //mudei de 6% p/ 16
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.15), transparent 40%);
   }
 
