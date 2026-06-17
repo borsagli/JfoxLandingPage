@@ -196,7 +196,7 @@ body {
 .body-section {
   padding: 3% 8% 0;
   text-align: center;
-  background-color: $light;
+  background-color: white;
 
   .body-section-p {
     color: $darkerprimary;
@@ -562,9 +562,8 @@ body {
 
 .section-4 {
   padding: 6% 8% 4%;
-
   .section-4-p {
-    background: linear-gradient(180deg, $darkerprimary, $lightprimary);
+    background: linear-gradient(180deg, $primary 0%, $lightprimary 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
