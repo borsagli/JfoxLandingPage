@@ -852,148 +852,17 @@ footer .design img {
   .section-3 .new-era-card .card-text {
     margin-bottom: 1.5%;
   }
-  .section-3 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 6% 0px;
-  }
-  .section-3 .subrow {
-    justify-content: space-between;
-  }
-  .section-3 .subcards-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-  }
-  .section-3 .subcards-wrap .subcard {
-    justify-content: center;
-    align-items: center;
-    width: -moz-fit-content;
-    width: fit-content;
-    background-color: #F3F5F7;
-    border: 1px solid #D9D9D9;
-    border-radius: 8px;
-    padding: 0.6rem 0.8rem;
-    white-space: nowrap;
-    display: flex;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-  .section-3 .subcards-wrap .subcard span {
-    font-weight: bold;
-    background: linear-gradient(360deg, #037C64, #0AB493);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-right: 2%;
-    font-size: 1.3rem;
-  }
-  .section-4 {
-    padding: 6% 8% 4%;
-  }
-  .section-4 .section-4-p {
-    background: linear-gradient(180deg, #15E9BF 0%, #0AB493 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: 600;
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-  }
   .section-4 .section-4-title {
-    font-weight: 900;
-    color: #F5FFFD;
-    font-weight: 700;
-    font-size: 2.5rem;
-  }
-  .section-4 .card {
-    width: 100%;
-    background: #0D1412;
-    border-radius: 8px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 33% 3fr;
-    margin-bottom: 6%;
-  }
-  .section-4 .left-panel {
-    position: relative;
-    background: #121A18;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .section-4 .number {
-    border-radius: 8px 1px 2px 1px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #15E9BF;
-    color: #000504;
-    font-weight: 800;
-    font-size: 1rem;
-    line-height: 1;
-    padding: 12px 16px 10px;
-    z-index: 2;
-  }
-  .section-4 .icon-wrap {
-    z-index: 1;
-  }
-  .section-4 .right-panel {
-    display: grid;
-    place-content: center;
-    text-align: center;
-    padding: 30px 16px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.15), transparent 40%);
-  }
-  .section-4 h2 {
-    margin: 0 0 10px;
-    color: #F5FFFD;
-    font-size: 1.8rem;
-    font-weight: 800;
-  }
-  .section-4 p {
-    margin: 0 auto;
-    max-width: 640px;
-    color: rgba(211, 211, 211, 0.3882352941);
-    font-size: 1.2rem;
-    line-height: 1.35;
-    font-weight: 500;
+    margin-bottom: 5%;
   }
   .section-5 {
     padding: 4% 0% 4% 0%;
-    background-color: #F3F5F7;
-    text-align: center;
+    align-items: center;
   }
-  .section-5 .section-5-p {
-    background: linear-gradient(180deg, #037C64, #0AB493);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: 600;
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+  .section-5 .rowcards {
+    align-self: center;
   }
-  .section-5 .section-5-title {
-    padding: 0% 5% 0% 5%;
-    font-weight: 900;
-    color: #000504;
-    font-weight: 700;
-    font-size: 3.3rem;
-  }
-  .section-5 .section-5-text {
-    padding: 0.5% 10% 0% 10%;
-    color: #5a5a5a;
-    font-size: 1.5rem;
-  }
-  .section-5 a {
-    color: #06997C;
-    text-decoration: none;
-    font-weight: bolder;
-  }
-  .section-5 .card {
+  .section-5 .rowcards .card {
     border: none;
     background-color: transparent;
     text-align: left;
@@ -1001,44 +870,43 @@ footer .design img {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
   }
-  .section-5 .card .card-title {
+  .section-5 .rowcards .card .card-title {
     font-weight: 900;
     color: #000504;
     font-size: 1.7rem;
   }
-  .section-5 .card .card-text {
+  .section-5 .rowcards .card .card-text {
     color: #5a5a5a;
     font-size: 1rem;
     flex-grow: 1;
   }
-  .section-5 .card .container-img {
+  .section-5 .rowcards .card .container-img {
     position: relative;
     display: grid;
     place-items: center;
     margin-bottom: 1rem;
   }
-  .section-5 .card .base,
-  .section-5 .card .overlay {
+  .section-5 .rowcards .card .base,
+  .section-5 .rowcards .card .overlay {
     grid-column: 1;
     grid-row: 1;
   }
-  .section-5 .card .base {
-    background: linear-gradient(180deg, #040929 0%, #000000 75.38%);
-    border-radius: 18px 18px 4px 4px;
-    display: block;
-    width: 261px;
-    height: 182px;
+  .section-5 .rowcards .card .base {
+    width: 100%;
+    height: 198px;
   }
-  .section-5 .card .overlay {
+  .section-5 .rowcards .card .overlay {
     max-height: 90%;
     z-index: 10;
     border-radius: 4px;
   }
-  .section-5 .card .overlay-full {
-    max-height: 100%;
+  .section-5 .rowcards .card .overlay-full {
+    width: 100%;
+    height: 200px;
   }
-  .section-5 .card .btn-acess {
+  .section-5 .rowcards .card .btn-acess {
     background: linear-gradient(90deg, #037C64, #0AB493) border-box;
     color: #F5FFFD;
     text-decoration: none;
@@ -1050,8 +918,9 @@ footer .design img {
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
+    margin-bottom: 100px;
   }
-  .section-5 .row {
+  .section-5 .rowcards .row {
     display: flex;
     align-items: stretch;
   }
