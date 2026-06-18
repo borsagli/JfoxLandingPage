@@ -958,7 +958,7 @@ footer {
       display: flex;
       justify-content: center;
     }
-    
+
 
     .btn-acess {
       margin-left: 25%;
@@ -966,69 +966,52 @@ footer {
     }
   }
 
-  // -------------------- PRIMEIRA SEÇÃO --------------------
+  // -------------------- RESPONSIVIDADE PRIMEIRA SEÇÃO --------------------
 
   .body-section {
-    padding: 3% 8% 0;
-    text-align: center;
-    background-color: white;
+    padding: 3% 8%;
 
-    .body-section-p {
-      color: $darkerprimary;
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin-bottom: 12px;
-    }
-
-    a {
-      color: $darkerprimary;
-      text-decoration: none;
-    }
-
-    .body-section-title {
-      color: $darkfont;
-      font-weight: 700;
-      font-size: 2.2rem;
-      margin-bottom: 36px;
-    }
-
-    //cards empresas 
-    .card {
-      height: 100%;
-      min-height: 100px;
-      background-color: $cardbg;
-      border: 2px solid $border;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 16px;
+    .cards-section {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex-direction: column;
 
-      img {
-        max-width: 100%;
-        max-height: 80px;
-        width: auto;
-        height: auto;
-        object-fit: contain;
+      .col {
+        margin-bottom: 4%;
       }
 
-      &:hover {
-        transform: translateY(-5px);
+      //cards empresas 
+      .card {
+        width: 100%;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        img {
+          max-width: 100%;
+          max-height: 80px;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+        }
       }
     }
 
     .cards-section:nth-of-type(2) {
-      margin-right: -50px;
+      margin-right: 0px;
     }
 
     .cards-section:nth-of-type(3) {
-      margin-left: -50px;
+      margin-left: 0px;
     }
 
     .cards-row-2 {
-      padding-bottom: 36px;
+      padding-bottom: 4%;
 
     }
   }
@@ -1036,60 +1019,20 @@ footer {
   // -------------------- SEGUNDA SEÇÃO --------------------
 
   .section-2 {
-    background: white;
     padding: 6% 8% 4%;
-
-    .section-2-p {
-      color: $darkerprimary;
-      font-weight: bold;
-      font-size: 1.5rem;
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: $mediumprimary;
-      text-decoration: none;
-      font-weight: bolder;
-    }
-
-    .section-2-title {
-      color: $darkfont;
-      font-weight: 700;
-      font-size: 2.2rem;
-      margin-bottom: 16px;
-    }
-
-    .section-2-text {
-      color: $lightfont;
-      font-size: 1.4rem;
-      margin-bottom: 16px;
-    }
-
-    ul li {
-      color: $darkfont;
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    ul li::marker {
-      color: $marker;
-      font-size: 20px;
-    }
 
     //card agendar diagnostico 
     .card {
-      margin-left: 16px;
+      margin: 5% 0% 5% 20%;
       height: 100%;
-      width: 100%;
+      width: 80%;
       min-height: 100px;
-      background-color: $cardbg;
-      border: 2px solid $border;
-      border-radius: 12px;
       padding: 5%;
       margin-bottom: 16px;
+
       display: flex;
       align-items: flex-start;
-      justify-content: flex-start;
+      justify-content: flex-end;
 
       .card-title {
         color: $darkfont;
