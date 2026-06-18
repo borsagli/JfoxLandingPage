@@ -1103,15 +1103,8 @@ footer {
 align-items: center;
     //cards
     .rowcards{
-  align-self: center;
-    
+    margin: 4%;    
     .card {
-      border: none;
-      background-color: transparent;
-      text-align: left;
-      border-radius: 18px 18px 4px 4px;
-      display: flex;
-      flex-direction: column;
       height: 100%;
       width: 100%;
 
