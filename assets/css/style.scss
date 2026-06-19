@@ -1039,6 +1039,12 @@ footer {
     margin-top: -1%;
     padding-bottom: 8%;
 
+    .row {
+      // isso aqui é pra centralizar o terceiro card
+      justify-content: center;
+
+    }
+
     //cards resultados
     .card {
       margin-left: 0px;
@@ -1070,7 +1076,7 @@ footer {
       display: inline-flex;
       align-items: center;
       margin-bottom: 10%;
-
+      font-size: 1.6rem;
 
     }
 
@@ -1387,18 +1393,35 @@ footer {
   // -------------------- RESPONSIVIDADE TERCEIRA SEÇÃO --------------------
 
   .section-3 {
+
     margin-top: -1%;
     padding-bottom: 8%;
 
+    .row { 
+      justify-content: center;
+    }
+
+    .section-3-text {
+      margin-bottom: 0px;
+    }
+
+    .section-3-text:nth-of-type(1) {
+      margin: 7%;
+    }
+
     //cards resultados
+
     .card {
       margin-left: 0px;
+      margin-top: 16px;
       height: 100%;
       width: 100%;
       padding: 8% 5%;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: left;
+      align-items: flex-start;
+      justify-content: left;
+
 
       .card-title {
         font-size: 3rem;
@@ -1508,21 +1531,22 @@ footer {
     align-items: center;
 
 
-  .section-5-p {
-    font-size: 1.1rem;
-  }
+    .section-5-p {
+      font-size: 1.1rem;
+    }
 
-  .section-5-title {
-    font-size: 2.7rem;
-  }
+    .section-5-title {
+      font-size: 2.7rem;
+    }
 
-  .section-5-text {
-    font-size: 1.3rem;
-  }
+    .section-5-text {
+      font-size: 1.3rem;
+    }
 
     //cards
     .rowcards {
       margin: 2%;
+
       .card {
         height: 100%;
         width: 100%;
@@ -1620,15 +1644,16 @@ footer {
     }
 
     .copyright {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-top: 1%;
     }
 
     .design {
+      padding-top: 5%;
       font-size: 1.4rem;
 
       img {
-        padding-left: 0.8rem;
+        padding-left: 0.5rem;
         max-width: 5.5rem;
       }
     }
