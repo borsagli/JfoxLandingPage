@@ -140,7 +140,7 @@ body {
   font-weight: 300;
 }
 .hero .btn-acess {
-  margin-top: 9%;
+  margin-top: 3%;
   display: inline-flex;
   align-items: center;
   border: 1px solid #15E9BF;
@@ -150,7 +150,6 @@ body {
   border-radius: 999px;
   font-weight: 700;
   font-size: 1.4rem;
-  white-space: nowrap;
   transition: color 0.2s ease;
 }
 .hero .btn-acess:hover {
@@ -766,8 +765,8 @@ footer .design img {
     justify-content: center;
   }
   .hero .btn-acess {
-    margin-left: 25%;
-    margin-bottom: 8%;
+    margin-left: 0%;
+    margin-bottom: 2%;
   }
   .body-section {
     padding: 3% 8%;
@@ -976,13 +975,13 @@ footer .design img {
   }
   .hero .hero-glow-2 {
     position: absolute;
-    top: 48%;
+    top: 70%;
     right: 80%;
     z-index: 0;
   }
   .hero .hero-glow-3 {
     position: absolute;
-    top: 30%;
+    top: 40%;
     right: 15%;
     z-index: 0;
   }
@@ -1005,8 +1004,8 @@ footer .design img {
   }
   .hero .ninja {
     position: absolute;
-    transform: translateY(-80%) translateX(-155%);
-    max-height: 250px;
+    transform: translateY(-80%) translateX(-165%);
+    max-height: 220px;
   }
   .hero .hero-stats {
     margin-top: 0%;
@@ -1016,7 +1015,7 @@ footer .design img {
   }
   .hero .btn-acess {
     margin-left: 0%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     font-size: 1.2rem;
   }
   .body-section {

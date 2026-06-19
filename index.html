@@ -9,101 +9,109 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <!-- ========== NAVBAR ========== -->
-   <div class="viewport-height">
-  <header class="container">
-        <nav class="navbar navbar-expand-lg site-nav">
-            <a class="navbar-logo" href="#">
-              <img src="assets/img/logo.svg" alt="Logotipo da JFOX">
+  <div class="viewport-height">
+    <header class="container">
+      <nav class="navbar navbar-expand-lg site-nav">
+        <a class="navbar-logo" href="#">
+          <img src="assets/img/logo.svg" alt="Logotipo da JFOX">
+        </a>
+        <!-- botao p responsividade -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <i class="bi bi-list text-white fs-1" alt="Abrir menu"></i>
+        </button>
+
+        <!-- menu -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Indústrias <img src="assets/img/pchevron.svg"
+                  alt="Seta para baixo: abrir menu Indústrias"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Cases</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Carreiras</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+          </ul>
+
+          <!-- botoes laterais -->
+          <div class="nav-actions">
+            <a href="#" class="btn-nav">Agendar Diagnóstico <img src="assets/img/arrow.svg" alt="Seta para direita">
             </a>
-            <!-- botao p responsividade -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-              aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
-            <i class="bi bi-list text-white fs-1" alt="Abrir menu"></i>
-            </button>
+            <a href="#" class="btn-nav">PT-BR <img src="assets/img/lchevron.svg"
+                alt="Seta para baixo: selecionar idioma"></a>
+          </div>
 
-            <!-- menu -->
-            <div class="collapse navbar-collapse" id="menu">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Indústrias <img src="assets/img/pchevron.svg" alt="Seta para baixo: abrir menu Indústrias"></a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Cases</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Carreiras</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
-              </ul>
+        </div>
+      </nav>
 
-              <!-- botoes laterais -->
-              <div class="nav-actions">
-                <a href="#" class="btn-nav">Agendar Diagnóstico <img src="assets/img/arrow.svg" alt="Seta para direita">
-                </a>
-                <a href="#" class="btn-nav">PT-BR <img src="assets/img/lchevron.svg" alt="Seta para baixo: selecionar idioma"></a>
+
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <img src="assets/img/glow.svg" alt="Efeito de brilho" class="hero-glow">
+            <p class="hero-p"> Salesforce + AI Agents. A nova geração do CRM já começou. </p>
+            <h1 class="hero-title">Seus agentes de IA já estão trabalhando. A pergunta é: para quem?</h1>
+            <p class="hero-text">A JFox é a consultoria Salesforce especializada em Agentforce — a plataforma de agentes
+              autônomos de IA que transforma como sua empresa vende, atende e cresce. Do diagnóstico à ativação, estamos
+              com você em cada etapa.</p>
+
+            <div class="row hero-stats">
+              <div class="col-4 stat">
+                <p class="stat-number">+200</p>
+                <p class="stat-label">Projetos Salesforce entregues.</p>
+
               </div>
-
+              <div class="col-2 stats">
+                <p class="stat-number">+210</p>
+                <p class="stat-label">Certificações.</p>
+              </div>
+              <div class="col-3 stats">
+                <p class="stat-number">+11</p>
+                <p class="stat-label">Anos no ecossistema.</p>
+              </div>
             </div>
-        </nav>
-
-                    
-  </header>
-
-  <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-           <img src="assets/img/glow.svg" alt="Efeito de brilho" class="hero-glow">
-          <p class="hero-p"> Salesforce + AI Agents. A nova geração do CRM já começou. </p>
-          <h1 class="hero-title">Seus agentes de IA já estão trabalhando. A pergunta é: para quem?</h1>
-          <p class="hero-text">A JFox é a consultoria Salesforce especializada em Agentforce — a plataforma de agentes
-            autônomos de IA que transforma como sua empresa vende, atende e cresce. Do diagnóstico à ativação, estamos
-            com você em cada etapa.</p>
-
-          <div class="row hero-stats">
-            <div class="col-4 stat">
-              <p class="stat-number">+200</p>
-              <p class="stat-label">Projetos Salesforce entregues.</p>
-              <a href="#" class="btn-acess">Agendar Diagnóstico Salesforce + IA  
-                <img src="assets/img/arrow.svg" alt="Seta para direita">
-              </a>
+            <div class="row">
+              <div class="col-lg-8">
+                <a href="#" class="btn-acess">Agendar Diagnóstico Salesforce + IA  
+                  <img src="assets/img/arrow.svg" alt="Seta para direita">
+                </a>
+              </div>
             </div>
-            <div class="col-2 stats">
-              <p class="stat-number">+210</p>
-              <p class="stat-label">Certificações.</p>
-            </div>
-            <div class="col-3 stats">
-              <p class="stat-number">+11</p>
-              <p class="stat-label">Anos no ecossistema.</p>
-            </div>
-
+          </div>
+          <div class="col-lg-5">
+            <img src="assets/img/glow2.svg" alt="Efeito de brilho" class="hero-glow-2">
+            <img src="assets/img/glow3.svg" alt="Efeito de brilho" class="hero-glow-3">
+            <img class="img-fluid cert" src="assets/img/certificados.png"
+              alt="Mosaico com dezesseis certificações Salesforce">
           </div>
         </div>
-        <div class="col-lg-5">
-          <img src="assets/img/glow2.svg" alt="Efeito de brilho" class="hero-glow-2">
-          <img src="assets/img/glow3.svg" alt="Efeito de brilho" class="hero-glow-3">
-          <img class="img-fluid cert" src="assets/img/certificados.png" alt="Mosaico com dezesseis certificações Salesforce">  
+        <!-- ===== segunda linha ===== -->
+        <div class="row ">
+          <div class="col-lg-5">
+          </div>
+          <div class="col-lg-2">
+            <img class="img-fluid ninja" src="assets/img/ninja.png" alt="Ninja segurando um troféu"> <!-- ninja -->
+          </div>
         </div>
+
       </div>
-      <!-- ===== segunda linha ===== -->
-      <div class="row ">
-        <div class="col-lg-5">
-        </div>
-        <div class="col-lg-2">
-          <img class="img-fluid ninja" src="assets/img/ninja.png" alt="Ninja segurando um troféu"> <!-- ninja -->
-        </div>
-      </div>
-      
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 
   <!-- ========== PRIMEIRA SEÇÃO ========== -->
   <section class="body-section">
@@ -373,7 +381,8 @@
           <div class="card">
             <div class="container-img">
               <div class="base"></div>
-              <img src="assets/img/ninja1.png" class="overlay" alt="Ninja com capacete de engenheiro segurando uma prancheta">  <!--ninja-->
+              <img src="assets/img/ninja1.png" class="overlay"
+                alt="Ninja com capacete de engenheiro segurando uma prancheta"> <!--ninja-->
             </div>
             <h1 class="card-title">BlueRoad — Revisão de Arquitetura</h1>
             <p class="card-text">Diagnóstico profundo da sua arquitetura Salesforce para eliminar gargalos e preparar a
@@ -389,7 +398,8 @@
 
             <div class="container-img">
               <div class="base"></div>
-              <img src="assets/img/ninja2.png" class="overlay overlay-full" alt="Ninja em um computador, com vários monitores ao redor">
+              <img src="assets/img/ninja2.png" class="overlay overlay-full"
+                alt="Ninja em um computador, com vários monitores ao redor">
             </div>
 
             <h1 class="card-title">Implementação Salesforce</h1>
@@ -459,7 +469,8 @@
           </ul>
         </div>
         <div class="col-lg-3">
-          <a href="#" class="btn-footer">Entrar em Contato <img src="assets/img/arrow.svg" alt="Seta apontando para a direita">
+          <a href="#" class="btn-footer">Entrar em Contato <img src="assets/img/arrow.svg"
+              alt="Seta apontando para a direita">
           </a>
           <p class="home">
             <img src="assets/img/uparrow.svg" alt="Seta apontando para cima"> Voltar ao topo
