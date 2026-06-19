@@ -950,8 +950,9 @@ footer {
 
     // img ninja
     .ninja {
+      max-width: 20%;
       position: absolute;
-      transform: translateY(-80%) translateX(-175%);
+      transform: translateY(-80%) translateX(-260%);
     }
 
 
@@ -1085,10 +1086,18 @@ footer {
     .new-era-card {
       padding: 5% 3%;
 
+      .subcard{
+            padding: 0.4rem 0.5rem;
+
+      }
       .card-title {
         font-size: 2.7rem;
       }
-
+      .logo{
+        img{
+          max-width: 70%;
+        }
+      }
       .card-text {
         margin-bottom: 1.5%;
       }
@@ -1262,7 +1271,7 @@ footer {
     .hero-glow {
       position: absolute;
       top: -15px;
-      left: 4%;
+      left: -2%;
       z-index: 0;
     }
 
@@ -1304,7 +1313,7 @@ footer {
     // img ninja
     .ninja {
       position: absolute;
-      transform: translateY(-80%) translateX(-165%);
+      transform: translateY(-80%) translateX(-255%);
       max-height: 220px;
     }
 
@@ -1397,7 +1406,7 @@ footer {
     margin-top: -1%;
     padding-bottom: 8%;
 
-    .row { 
+    .row {
       justify-content: center;
     }
 
@@ -1406,7 +1415,7 @@ footer {
     }
 
     .section-3-text:nth-of-type(1) {
-      margin: 7%;
+      margin: 7% 7% 4%;
     }
 
     //cards resultados
@@ -1417,11 +1426,6 @@ footer {
       height: 100%;
       width: 100%;
       padding: 8% 5%;
-      display: flex;
-      text-align: left;
-      align-items: flex-start;
-      justify-content: left;
-
 
       .card-title {
         font-size: 3rem;

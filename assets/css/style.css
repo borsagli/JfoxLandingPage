@@ -757,8 +757,9 @@ footer .design img {
     z-index: 0;
   }
   .hero .ninja {
+    max-width: 20%;
     position: absolute;
-    transform: translateY(-80%) translateX(-175%);
+    transform: translateY(-80%) translateX(-260%);
   }
   .hero .hero-stats {
     display: flex;
@@ -852,8 +853,14 @@ footer .design img {
   .section-3 .new-era-card {
     padding: 5% 3%;
   }
+  .section-3 .new-era-card .subcard {
+    padding: 0.4rem 0.5rem;
+  }
   .section-3 .new-era-card .card-title {
     font-size: 2.7rem;
+  }
+  .section-3 .new-era-card .logo img {
+    max-width: 70%;
   }
   .section-3 .new-era-card .card-text {
     margin-bottom: 1.5%;
@@ -974,7 +981,7 @@ footer .design img {
   .hero .hero-glow {
     position: absolute;
     top: -15px;
-    left: 4%;
+    left: -2%;
     z-index: 0;
   }
   .hero .hero-glow-2 {
@@ -1008,7 +1015,7 @@ footer .design img {
   }
   .hero .ninja {
     position: absolute;
-    transform: translateY(-80%) translateX(-165%);
+    transform: translateY(-80%) translateX(-255%);
     max-height: 220px;
   }
   .hero .hero-stats {
@@ -1080,7 +1087,7 @@ footer .design img {
     margin-bottom: 0px;
   }
   .section-3 .section-3-text:nth-of-type(1) {
-    margin: 7%;
+    margin: 7% 7% 4%;
   }
   .section-3 .card {
     margin-left: 0px;
@@ -1088,10 +1095,6 @@ footer .design img {
     height: 100%;
     width: 100%;
     padding: 8% 5%;
-    display: flex;
-    text-align: left;
-    align-items: flex-start;
-    justify-content: left;
   }
   .section-3 .card .card-title {
     font-size: 3rem;
