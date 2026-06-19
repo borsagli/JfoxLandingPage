@@ -855,7 +855,7 @@ footer {
     white-space: nowrap;
   }
 
-  .home{
+  .home {
     color: $light;
     font-size: 1.3rem;
     margin-top: 12px;
@@ -896,7 +896,10 @@ footer {
 
 }
 
-/*----------------------- RESPONSIVIDADE -----------*/
+/*----------------------- RESPONSIVIDADE -----------------------
+
+
+---------------------- 768px ----------------------*/
 
 @media (max-width: 768px) {
 
@@ -1171,7 +1174,7 @@ footer {
   // ------------------ RESPONSIVIDADE FOOTER --------------------
 
   footer {
-    padding: 7% ;
+    padding: 7%;
 
     .footer-text {
       font-size: 1.3rem;
@@ -1221,4 +1224,356 @@ footer {
     }
 
   }
+}
+
+// ---------------------- 576px ----------------------
+
+@media (max-width: 576px) {
+
+  // -------------------- RESPONSIVIDADE NAVBAR --------------------
+
+  .site-nav {
+    //flex-direction: column;
+    margin: 4% 0% 0% 0%;
+
+    .navbar-logo img {
+      height: 36px;
+      width: auto;
+    }
+  }
+
+  // -------------------- RESPONSIVIDADE HERO --------------------
+  .hero {
+    //min-height: 100vh;
+    position: relative;
+    padding: 0% 5%;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    //brilhos
+    .hero-glow {
+      position: absolute;
+      top: -15px;
+      left: 4%;
+      z-index: 0;
+    }
+
+    .hero-glow-2 {
+      position: absolute;
+      top: 48%;
+      right: 80%;
+      z-index: 0;
+    }
+
+    .hero-glow-3 {
+      position: absolute;
+      top: 30%;
+      right: 15%;
+      z-index: 0;
+    }
+
+    .hero-p {
+      font-size: 1rem;
+      margin-bottom: 12px;
+      margin-top: 12px;
+    }
+
+    .hero-title {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .hero-text {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .cert {
+      z-index: 0;
+      max-height: 300px;
+    }
+
+    // img ninja
+    .ninja {
+      position: absolute;
+      transform: translateY(-80%) translateX(-155%);
+      max-height: 250px;
+    }
+
+
+    // projetos, certificacoes, anos...
+    .hero-stats {
+      margin-top: 0%;
+    }
+
+    .stat {
+      padding: 0px;
+    }
+
+    .btn-acess {
+      margin-left: 0%;
+      margin-bottom: 8%;
+      font-size: 1.2rem;
+    }
+  }
+
+  // -------------------- RESPONSIVIDADE PRIMEIRA SEÇÃO --------------------
+
+  .body-section {
+    padding: 3% 8%;
+
+    .cards-section {
+      display: flex;
+      flex-direction: column;
+
+      .col {
+        margin-bottom: 4%;
+      }
+
+      //cards empresas 
+      .card {
+        width: 100%;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        img {
+          max-width: 100%;
+          max-height: 80px;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+
+    .cards-section:nth-of-type(2) {
+      margin-right: 0px;
+    }
+
+    .cards-section:nth-of-type(3) {
+      margin-left: 0px;
+    }
+
+    .cards-row-2 {
+      padding-bottom: 4%;
+
+    }
+  }
+
+  // -------------------- RESPONSIVIDADE SEGUNDA SEÇÃO --------------------
+
+  .section-2 {
+    padding: 6% 8% 4%;
+    margin-top: -1%;
+
+    .card {
+      margin: 5% 0% 8% 20%;
+      height: 100%;
+      width: 80%;
+
+    }
+
+  }
+
+  // -------------------- RESPONSIVIDADE TERCEIRA SEÇÃO --------------------
+
+  .section-3 {
+    margin-top: -1%;
+    padding-bottom: 8%;
+
+    //cards resultados
+    .card {
+      margin-left: 0px;
+      height: 100%;
+      width: 100%;
+      padding: 8% 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .card-title {
+        font-size: 3.7rem;
+        margin-bottom: 0px;
+
+      }
+
+      .card-text {
+        font-size: 1.1rem;
+        margin-bottom: 0px;
+      }
+
+      .card-subtext {
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+      }
+    }
+
+    .btn-acess {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 10%;
+
+
+    }
+
+    // ----------- RESPONSIVIDADE card nova era salesforce ----------------
+
+    .new-era-card {
+      padding: 5% 3%;
+
+      .card-title {
+        font-size: 2.7rem;
+      }
+
+      .card-text {
+        margin-bottom: 1.5%;
+      }
+    }
+
+  }
+
+  // -------------------- RESPONSIVIDADE QUARTA SEÇÃO --------------------
+
+  .section-4 {
+    .section-4-title {
+      margin-bottom: 5%;
+    }
+  }
+
+  // ------------------ RESPONSIVIDADE SEÇAO 5 --------------------
+
+  .section-5 {
+    padding: 4% 0% 4% 0%;
+    align-items: center;
+
+    //cards
+    .rowcards {
+      margin: 4%;
+
+      .card {
+        height: 100%;
+        width: 100%;
+
+        .btn-acess {
+          margin-bottom: 10%;
+        }
+
+        .card-title {
+          font-weight: 900;
+          color: $dark;
+          font-size: 1.7rem;
+        }
+
+        .card-text {
+          color: $lightfont;
+          font-size: 1rem;
+          flex-grow: 1;
+        }
+
+        .container-img {
+          position: relative;
+          display: grid;
+          place-items: center;
+          margin-bottom: 1rem;
+        }
+
+        .base,
+        .overlay {
+          grid-column: 1;
+          grid-row: 1;
+        }
+
+
+        .base {
+          width: 100%;
+          height: 198px;
+
+        }
+
+        .overlay {
+          max-height: 90%;
+          z-index: 10;
+          border-radius: 4px;
+        }
+
+        .overlay-full {
+
+          width: 100%;
+          height: 200px;
+        }
+
+      }
+
+      .row {
+        display: flex;
+        align-items: stretch;
+      }
+    }
+  }
+
+
+  // ------------------ RESPONSIVIDADE FOOTER --------------------
+
+  footer {
+    padding: 7%;
+
+    .footer-text {
+      font-size: 1.3rem;
+    }
+
+    .btn-footer {
+      margin-top: 5%;
+      margin-bottom: 10%;
+      padding: 10px 18px;
+      font-size: 1.5rem;
+      width: 70%;
+
+    }
+
+    .items {
+      display: flex;
+      justify-content: left;
+    }
+
+    ul {
+      font-size: 1.3rem;
+      padding: 0;
+      line-height: 2.5;
+      padding-right: 0%;
+    }
+
+    .home {
+      font-size: 1.5rem;
+    }
+
+    hr {
+      border-top: 3px solid $primary;
+    }
+
+    .copyright {
+      font-size: 1.3rem;
+      margin-top: 1%;
+    }
+
+    .design {
+      font-size: 1.4rem;
+
+      img {
+        padding-left: 0.8rem;
+        max-width: 5.5rem;
+      }
+    }
+
+  }
+
 }
