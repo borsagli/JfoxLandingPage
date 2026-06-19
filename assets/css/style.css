@@ -1079,30 +1079,63 @@ footer .design img {
     justify-content: center;
   }
   .section-3 .card .card-title {
-    font-size: 3.7rem;
+    font-size: 3rem;
     margin-bottom: 0px;
   }
   .section-3 .card .card-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 0px;
   }
   .section-3 .card .card-subtext {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 0px;
   }
   .section-3 .btn-acess {
     display: inline-flex;
     align-items: center;
     margin-bottom: 10%;
+    font-size: 1.4rem;
+    padding: 2% 3%;
   }
   .section-3 .new-era-card {
     padding: 5% 3%;
   }
   .section-3 .new-era-card .card-title {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
   .section-3 .new-era-card .card-text {
+    font-size: 1.2rem;
     margin-bottom: 1.5%;
+  }
+  .section-3 .new-era-card .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 6% 0px;
+  }
+  .section-3 .new-era-card .logo img {
+    max-height: 80%;
+  }
+  .section-3 .new-era-card .subcards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .section-3 .new-era-card .subcards-wrap .subcard {
+    padding: 0.4rem 0.6rem;
+    white-space: none;
+    font-size: 1rem;
+  }
+  .section-3 .new-era-card .subcards-wrap .subcard span {
+    font-weight: bold;
+    background: linear-gradient(360deg, #037C64, #0AB493);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-right: 2%;
+    font-size: 1.1rem;
   }
   .section-4 .section-4-title {
     margin-bottom: 5%;

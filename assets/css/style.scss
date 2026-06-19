@@ -1401,18 +1401,18 @@ footer {
       justify-content: center;
 
       .card-title {
-        font-size: 3.7rem;
+        font-size: 3rem;
         margin-bottom: 0px;
 
       }
 
       .card-text {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 0px;
       }
 
       .card-subtext {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin-bottom: 0px;
       }
     }
@@ -1421,8 +1421,8 @@ footer {
       display: inline-flex;
       align-items: center;
       margin-bottom: 10%;
-
-
+      font-size: 1.4rem;
+      padding: 2% 3%;
     }
 
     // ----------- RESPONSIVIDADE card nova era salesforce ----------------
@@ -1431,12 +1431,47 @@ footer {
       padding: 5% 3%;
 
       .card-title {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
       }
 
       .card-text {
+        font-size: 1.2rem;
         margin-bottom: 1.5%;
       }
+ .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 6% 0px;
+
+    img{
+      max-height:80%;
+    }
+  }
+      .subcards-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+
+        .subcard {
+          padding: 0.4rem 0.6rem;
+          white-space: none;
+          font-size: 1rem;
+
+          span {
+            font-weight: bold;
+            background: linear-gradient(360deg, $darkerprimary, $lightprimary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-right: 2%;
+            font-size: 1.1rem;
+          }
+        }
+      }
+
     }
 
   }
