@@ -36,8 +36,8 @@ body {
 .site-nav {
   border: 1px solid transparent;
   margin: 1% 0%;
+  border-radius: 60px;
   padding: 20px 32px;
-  border-radius: 999px;
   background:
     linear-gradient($dark, $darkblue) padding-box,
     linear-gradient(90deg, $lightgrey, $darkblue, $lightgrey, $greyblue) border-box;
@@ -908,11 +908,45 @@ footer {
     //flex-direction: column;
     margin: 2% 0%;
 
+    .navbar-nav {
+      gap: 2rem;
+      row-gap: 0rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      padding-top: 2%;
+
+      .nav-link {
+        font-size: 1.2rem;
+        margin-right: 15%;
+
+      }
+    }
+
+    .btn-nav {
+      margin-top: 3%;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      font-size: 1.3rem;
+
+    }
+
+    .nav-actions {
+      padding-left: 0%;
+
+    }
+
     .navbar-logo img {
       height: 36px;
       width: auto;
     }
+
   }
+
+
+
 
   // -------------------- RESPONSIVIDADE HERO --------------------
   .hero {
@@ -1046,6 +1080,15 @@ footer {
 
     }
 
+    .section-3-text {
+      margin-bottom: 0px;
+
+    }
+
+    .section-3-text:nth-of-type(1) {
+      margin: 5%;
+    }
+
     //cards resultados
     .card {
       margin-left: 0px;
@@ -1077,7 +1120,7 @@ footer {
       display: inline-flex;
       align-items: center;
       margin-bottom: 10%;
-      font-size: 1.6rem;
+      font-size: 1.7rem;
 
     }
 
@@ -1086,18 +1129,21 @@ footer {
     .new-era-card {
       padding: 5% 3%;
 
-      .subcard{
-            padding: 0.4rem 0.5rem;
+      .subcard {
+        padding: 0.4rem 0.5rem;
 
       }
+
       .card-title {
         font-size: 2.7rem;
       }
-      .logo{
-        img{
+
+      .logo {
+        img {
           max-width: 70%;
         }
       }
+
       .card-text {
         margin-bottom: 1.5%;
       }
@@ -1249,6 +1295,40 @@ footer {
   .site-nav {
     //flex-direction: column;
     margin: 4% 0% 0% 0%;
+
+    .navbar-nav {
+      gap: 2rem;
+      row-gap: 0rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      padding-top: 2%;
+
+      .nav-link {
+        color: $light;
+        font-size: 1.2rem;
+        margin-right: 15%;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+    .btn-nav {
+      margin-top: 3%;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      font-size: 1.3rem;
+
+    }
+
+    .nav-actions {
+      padding-left: 0%;
+
+    }
 
     .navbar-logo img {
       height: 36px;
