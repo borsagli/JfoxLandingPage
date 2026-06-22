@@ -435,7 +435,7 @@ body {
   .section-3-title {
     color: $darkfont;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .section-3-text {
@@ -617,7 +617,7 @@ body {
     font-weight: 900;
     color: $light;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   //CARDS 
@@ -707,13 +707,13 @@ body {
     font-weight: 900;
     color: $dark;
     font-weight: 700;
-    font-size: 3.3rem;
+    font-size: 2.2rem;
   }
 
   .section-5-text {
     padding: 0.5% 10% 0% 10%;
     color: $lightfont;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   a {
@@ -959,6 +959,12 @@ footer {
     flex-direction: column;
     justify-content: center;
 
+
+    .hero-title {
+      font-size: 2.3rem;
+      margin-bottom: 16px;
+    }
+
     //brilhos
     .hero-glow {
       position: absolute;
@@ -1008,6 +1014,10 @@ footer {
   .body-section {
     padding: 3% 8%;
 
+    .body-section-title {
+      font-size: 2.3rem;
+    }
+
     .cards-section {
       display: flex;
       flex-direction: column;
@@ -1015,6 +1025,7 @@ footer {
       .col {
         margin-bottom: 4%;
       }
+
 
       //cards empresas 
       .card {
@@ -1059,6 +1070,10 @@ footer {
     padding: 6% 8% 4%;
     margin-top: -1%;
 
+    .section-2-title {
+      font-size: 2.3rem;
+    }
+
     .card {
       margin: 5% 0% 8% 20%;
       height: 100%;
@@ -1078,6 +1093,10 @@ footer {
       // isso aqui é pra centralizar o terceiro card
       justify-content: center;
 
+    }
+
+    .section-3-title {
+      font-size: 2.3rem;
     }
 
     .section-3-text {
@@ -1135,7 +1154,7 @@ footer {
       }
 
       .card-title {
-        font-size: 2.7rem;
+        font-size: 2.3rem;
       }
 
       .logo {
@@ -1156,6 +1175,7 @@ footer {
   .section-4 {
     .section-4-title {
       margin-bottom: 5%;
+      font-size: 2.3rem;
     }
   }
 
@@ -1164,6 +1184,10 @@ footer {
   .section-5 {
     padding: 4% 0% 4% 0%;
     align-items: center;
+
+    .section-5-title {
+      font-size: 2.3rem;
+    }
 
     //cards
     .rowcards {
@@ -1235,6 +1259,10 @@ footer {
 
   footer {
     padding: 7%;
+
+    .img-footer {
+      margin-bottom: 5%;
+    }
 
     .footer-text {
       font-size: 1.3rem;
@@ -1340,7 +1368,7 @@ footer {
   .hero {
     //min-height: 100vh;
     position: relative;
-    padding: 0% 5%;
+    padding: 0% 5% 5%;
     text-align: center;
     display: flex;
     flex: 1;
@@ -1376,7 +1404,7 @@ footer {
     }
 
     .hero-title {
-      font-size: 2rem;
+      font-size: 2.3rem;
       margin-bottom: 16px;
     }
 
@@ -1538,7 +1566,7 @@ footer {
       padding: 5% 3%;
 
       .card-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
       }
 
       .card-text {
@@ -1617,10 +1645,6 @@ footer {
 
     .section-5-p {
       font-size: 1.1rem;
-    }
-
-    .section-5-title {
-      font-size: 2.7rem;
     }
 
     .section-5-text {

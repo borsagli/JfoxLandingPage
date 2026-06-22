@@ -338,7 +338,7 @@ body {
 .section-3 .section-3-title {
   color: #010F0C;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .section-3 .section-3-text {
   color: #5a5a5a;
@@ -489,7 +489,7 @@ body {
   font-weight: 900;
   color: #F5FFFD;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .section-4 .card {
   width: 100%;
@@ -564,12 +564,12 @@ body {
   font-weight: 900;
   color: #000504;
   font-weight: 700;
-  font-size: 3.3rem;
+  font-size: 2.2rem;
 }
 .section-5 .section-5-text {
   padding: 0.5% 10% 0% 10%;
   color: #5a5a5a;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .section-5 a {
   color: #06997C;
@@ -761,6 +761,10 @@ footer .design img {
     flex-direction: column;
     justify-content: center;
   }
+  .hero .hero-title {
+    font-size: 2.3rem;
+    margin-bottom: 16px;
+  }
   .hero .hero-glow {
     position: absolute;
     top: -15px;
@@ -794,6 +798,9 @@ footer .design img {
   }
   .body-section {
     padding: 3% 8%;
+  }
+  .body-section .body-section-title {
+    font-size: 2.3rem;
   }
   .body-section .cards-section {
     display: flex;
@@ -834,6 +841,9 @@ footer .design img {
     padding: 6% 8% 4%;
     margin-top: -1%;
   }
+  .section-2 .section-2-title {
+    font-size: 2.3rem;
+  }
   .section-2 .card {
     margin: 5% 0% 8% 20%;
     height: 100%;
@@ -845,6 +855,9 @@ footer .design img {
   }
   .section-3 .row {
     justify-content: center;
+  }
+  .section-3 .section-3-title {
+    font-size: 2.3rem;
   }
   .section-3 .section-3-text {
     margin-bottom: 0px;
@@ -886,7 +899,7 @@ footer .design img {
     padding: 0.4rem 0.5rem;
   }
   .section-3 .new-era-card .card-title {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
   }
   .section-3 .new-era-card .logo img {
     max-width: 70%;
@@ -896,10 +909,14 @@ footer .design img {
   }
   .section-4 .section-4-title {
     margin-bottom: 5%;
+    font-size: 2.3rem;
   }
   .section-5 {
     padding: 4% 0% 4% 0%;
     align-items: center;
+  }
+  .section-5 .section-5-title {
+    font-size: 2.3rem;
   }
   .section-5 .rowcards {
     margin: 4%;
@@ -951,6 +968,9 @@ footer .design img {
   }
   footer {
     padding: 7%;
+  }
+  footer .img-footer {
+    margin-bottom: 5%;
   }
   footer .footer-text {
     font-size: 1.3rem;
@@ -1027,7 +1047,7 @@ footer .design img {
   }
   .hero {
     position: relative;
-    padding: 0% 5%;
+    padding: 0% 5% 5%;
     text-align: center;
     display: flex;
     flex: 1;
@@ -1058,7 +1078,7 @@ footer .design img {
     margin-top: 12px;
   }
   .hero .hero-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-bottom: 16px;
   }
   .hero .hero-text {
@@ -1175,7 +1195,7 @@ footer .design img {
     padding: 5% 3%;
   }
   .section-3 .new-era-card .card-title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .section-3 .new-era-card .card-text {
     font-size: 1.2rem;
@@ -1229,9 +1249,6 @@ footer .design img {
   }
   .section-5 .section-5-p {
     font-size: 1.1rem;
-  }
-  .section-5 .section-5-title {
-    font-size: 2.7rem;
   }
   .section-5 .section-5-text {
     font-size: 1.3rem;
