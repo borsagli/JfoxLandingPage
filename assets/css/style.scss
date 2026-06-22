@@ -63,11 +63,88 @@ body {
 
   }
 
+  //dropdown industrias
+  .nav-item.dropdown {
+    position: relative;
+
+    .content {
+      background:
+        linear-gradient($dark, $darkblue) padding-box,
+        linear-gradient(90deg, $lightgrey, $darkblue, $lightgrey, $greyblue) border-box;
+      border: 1px solid transparent;
+      border-radius: 16px;
+      padding: 0;
+      display: none;
+      position: absolute;
+      // background-color: red;
+      top: 100%;
+      left: 0;
+
+      a {
+        color: white;
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+
+        &:hover {
+          color: $primary;
+          transition: 0.3s;
+        }
+      }
+
+    }
+
+    &:hover .content {
+      display: block;
+      z-index: 999;
+    }
+
+  }
+
   // grupo botoes
   .nav-actions {
     display: flex;
     gap: 16px;
     padding-left: 4%;
+  }
+
+  .dropdown {
+    position: relative;
+
+    .content {
+      display:none;
+      background:
+        linear-gradient($dark, $darkblue) padding-box,
+        linear-gradient(90deg, $lightgrey, $darkblue, $lightgrey, $greyblue) border-box;
+      border: 1px solid $primary;
+      border-radius: 0px 0px 16px 16px;
+      padding: 0;
+      position: absolute;
+      // background-color: red;
+      top: calc(100% + 5px);
+      left: 0;
+      transform: translateX(25%);
+
+      a {
+        color: white;
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+
+        &:hover {
+          color: $primary;
+          transition: 0.5s;
+        }
+      }
+
+    }
+
+    &:hover .content {
+      //transition-delay: 0s;
+      display: block;
+      z-index: 999;
+    }
+
   }
 
   // botoes lateral direita
