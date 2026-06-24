@@ -9,106 +9,124 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
 
   <!-- ========== NAVBAR ========== -->
-   <div class="viewport-height">
-  <header>
-    <div class="row">
-      <div class="col-lg-12">
-        <nav class="navbar navbar-expand-lg site-nav">
-          <div class="container">
-            <a class="navbar-logo" href="#">
-              <img src="assets/img/logo.svg" alt="Logotipo da JFOX">
-            </a>
-            <!-- botao p responsividade -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-              aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  <div class="viewport-height">
+    <header class="container">
+      <nav class="navbar navbar-expand-lg site-nav">
+        <a class="navbar-logo" href="#">
+          <img src="assets/img/logo.svg" alt="Logotipo da JFOX">
+        </a>
+        <!-- botao p responsividade -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <i class="bi bi-list text-white fs-1" alt="Abrir menu"></i>
+        </button>
 
-            <!-- menu -->
-            <div class="collapse navbar-collapse" id="menu">
-
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Indústrias <img src="assets/img/pchevron.svg" alt="Seta para baixo: abrir menu Indústrias"></a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Cases</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Carreiras</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
-              </ul>
-
-              <!-- botoes laterais -->
-              <div class="nav-actions">
-                <a href="#" class="btn-nav">Agendar Diagnóstico <img src="assets/img/arrow.svg" alt="Seta para direita">
-                </a>
-                <a href="#" class="btn-nav">PT-BR <img src="assets/img/lchevron.svg" alt="Seta para baixo: selecionar idioma"></a>
+        <!-- menu -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Indústrias <img src="assets/img/pchevron.svg"
+                  alt="Seta para baixo: abrir menu Indústrias"></a>
+              <div class="content">
+                <a href="#">Indústria</a>
+                <a href="#">Indústria</a>
+                <a href="#">Indústria</a>
               </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Cases</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Carreiras</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+          </ul>
 
+          <!-- botoes laterais -->
+          <div class="nav-actions">
+            <a href="#" class="btn-nav">Agendar Diagnóstico <img src="assets/img/arrow.svg" alt="Seta para direita">
+            </a>
+            <div class="dropdown">
+              <a href="#" class="btn-nav">PT-BR <img src="assets/img/lchevron.svg"
+                  alt="Seta para baixo: selecionar idioma"></a>
+              <div class="content">
+                <a href="#">ENG</a>
+                <a href="#">ES</a>
+              </div>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
 
-      </div>
-    </div>
-  </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-           <img src="assets/img/glow.svg" alt="Efeito de brilho" class="hero-glow">
-          <p class="hero-p"> Salesforce + AI Agents. A nova geração do CRM já começou. </p>
-          <h1 class="hero-title">Seus agentes de IA já estão trabalhando. A pergunta é: para quem?</h1>
-          <p class="hero-text">A JFox é a consultoria Salesforce especializada em Agentforce — a plataforma de agentes
-            autônomos de IA que transforma como sua empresa vende, atende e cresce. Do diagnóstico à ativação, estamos
-            com você em cada etapa.</p>
+    </header>
 
-          <div class="row hero-stats">
-            <div class="col-4 stat">
-              <p class="stat-number">+200</p>
-              <p class="stat-label">Projetos Salesforce entregues.</p>
-              <a href="#" class="btn-acess">Agendar Diagnóstico Salesforce + IA  
-                <img src="assets/img/arrow.svg" alt="Seta para direita">
-              </a>
+    <!-- ========== HERO ========== -->
+    <section class="hero" href="#inicio">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <img src="assets/img/glow.svg" alt="Efeito de brilho" class="hero-glow">
+            <p class="hero-p"> Salesforce + AI Agents. A nova geração do CRM já começou. </p>
+            <h1 class="hero-title">Seus agentes de IA já estão trabalhando. <br> A pergunta é: para quem?</h1>
+            <p class="hero-text">A JFox é a consultoria Salesforce especializada em Agentforce — a plataforma de agentes
+              autônomos de IA que transforma como sua empresa vende, atende e cresce. Do diagnóstico à ativação, estamos
+              com você em cada etapa.</p>
+
+            <div class="row hero-stats">
+              <div class="col-4 stat">
+                <p class="stat-number">+200</p>
+                <p class="stat-label">Projetos Salesforce entregues.</p>
+
+              </div>
+              <div class="col-2 stats">
+                <p class="stat-number">+210</p>
+                <p class="stat-label">Certificações.</p>
+              </div>
+              <div class="col-3 stats">
+                <p class="stat-number">+11</p>
+                <p class="stat-label">Anos no ecossistema.</p>
+              </div>
             </div>
-            <div class="col-2 stats">
-              <p class="stat-number">+210</p>
-              <p class="stat-label">Certificações.</p>
+            <div class="row">
+              <div class="col-lg-8">
+                <a href="#" class="btn-acess">Agendar Diagnóstico Salesforce + IA  
+                  <img src="assets/img/arrow.svg" alt="Seta para direita">
+                </a>
+              </div>
             </div>
-            <div class="col-3 stats">
-              <p class="stat-number">+11</p>
-              <p class="stat-label">Anos no ecossistema.</p>
-            </div>
-
+          </div>
+          <div class="col-lg-5">
+            <img src="assets/img/glow2.svg" alt="Efeito de brilho" class="hero-glow-2">
+            <img src="assets/img/glow3.svg" alt="Efeito de brilho" class="hero-glow-3">
+            <img class="img-fluid cert" src="assets/img/certificados.png"
+              alt="Mosaico com dezesseis certificações Salesforce">
           </div>
         </div>
-        <div class="col-lg-5">
-          <img src="assets/img/glow2.svg" alt="Efeito de brilho" class="hero-glow-2">
-          <img src="assets/img/glow3.svg" alt="Efeito de brilho" class="hero-glow-3">
-          <img class="img-fluid cert" src="assets/img/certificados.png" alt="Mosaico com dezesseis certificações Salesforce">  
+        <!-- ===== segunda linha ===== -->
+        <div class="row ">
+          <div class="col-lg-5">
+          </div>
+          <div class="col-lg-2">
+            <img class="img-fluid ninja" src="assets/img/ninja.png" alt="Ninja segurando um troféu"> <!-- ninja -->
+          </div>
         </div>
+
       </div>
-      <!-- ===== segunda linha ===== -->
-      <div class="row ">
-        <div class="col-lg-5">
-        </div>
-        <div class="col-lg-2">
-          <img class="img-fluid ninja" src="assets/img/ninja.png" alt="Ninja segurando um troféu"> <!-- ninja -->
-        </div>
-      </div>
-      
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
+
   <!-- ========== PRIMEIRA SEÇÃO ========== -->
   <section class="body-section">
     <div class="container">
@@ -121,22 +139,22 @@
       <!-- ===== cards ===== -->
       <div class="cards-section">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-6 col">
             <div class="card">
               <img src="assets/img/reclameaqui.svg" alt="Reclame Aqui">
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-6 col">
             <div class="card">
               <img src="assets/img/caju.svg" alt="Caju">
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-6">
             <div class="card">
               <img src="assets/img/honda.svg" alt="Honda">
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-6">
             <div class="card">
               <img src="assets/img/tplink.svg" alt="Tp Link">
             </div>
@@ -146,22 +164,22 @@
       <!-- ===== segunda linha de cards ===== -->
       <div class="cards-section cards-row-2">
         <div class="row mt-4">
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-6 col">
             <div class="card">
               <img src="assets/img/tracbel.svg" alt="Tracbel">
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-6 col">
             <div class="card">
               <img src="assets/img/localiza.svg" alt="Localiza">
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-6 col">
             <div class="card">
               <img src="assets/img/fiat.svg" alt="Fiat">
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-6 col">
             <div class="card">
               <img src="assets/img/cemig.svg" alt="Cemig">
             </div>
@@ -217,25 +235,25 @@
           <p class="section-3-text">Todo mundo fala sobre IA. Nós colocamos a IA em prática.</p>
         </div>
         <div class="row">
-          <div class="col-lg-4"> <!-- primeira coluna das 3 -->
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6 mt-3">
             <div class="card">
               <h1 class="card-title">66%</h1>
               <p class="card-text">De resolução automática de casos.</a></p>
-              <p class="card-subtext">Todo mundo fala sobre IA. Nós colocamos a <br> IA em prática.</p>
+              <p class="card-subtext">Todo mundo fala sobre IA. Nós colocamos a IA em prática.</p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6 mt-3">
             <div class="card">
               <h1 class="card-title">15%</h1>
               <p class="card-text">Mais pipeline gerado</a></p>
               <p class="card-subtext">Com agentes qualificando leads automaticamente.</p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6 mt-3 card-3">
             <div class="card">
               <h1 class="card-title">1,8x</h1>
               <p class="card-text">Mais conversão de leads</a></p>
-              <p class="card-subtext">Com interações mais rápidas e <br> personalizadas.</p>
+              <p class="card-subtext">Com interações mais rápidas<br> e personalizadas.</p>
             </div>
           </div>
         </div>
@@ -367,17 +385,20 @@
         <div class="col-lg-12">
           <p class="section-5-p">Serviço JFOX</p>
           <h1 class="section-5-title">Tudo que seu Salesforce precisa para <a href="#">evoluir</a> continuamente.</h1>
-          <p class="section-5-text">Do primeiro diagnóstico à sustentação contínua — cada serviço foi desenhado para
-            garantir que o Salesforce nunca pare de evoluir na sua empresa.</p>
+          <p class="section-5-text">Do primeiro diagnóstico à sustentação contínua — cada serviço foi desenhado
+            <br>
+            para garantir que o Salesforce nunca pare de evoluir na sua empresa.
+          </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row rowcards">
         <!-- primeira col -->
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="card">
             <div class="container-img">
               <div class="base"></div>
-              <img src="assets/img/ninja1.png" class="overlay" alt="Ninja com capacete de engenheiro segurando uma prancheta">  <!--ninja-->
+              <img src="assets/img/ninja1.png" class="overlay"
+                alt="Ninja com capacete de engenheiro segurando uma prancheta"> <!--ninja-->
             </div>
             <h1 class="card-title">BlueRoad — Revisão de Arquitetura</h1>
             <p class="card-text">Diagnóstico profundo da sua arquitetura Salesforce para eliminar gargalos e preparar a
@@ -388,12 +409,13 @@
           </div>
         </div>
         <!-- segunda col -->
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="card">
 
             <div class="container-img">
               <div class="base"></div>
-              <img src="assets/img/ninja2.png" class="overlay overlay-full" alt="Ninja em um computador, com vários monitores ao redor">
+              <img src="assets/img/ninja2.png" class="overlay overlay-full"
+                alt="Ninja em um computador, com vários monitores ao redor">
             </div>
 
             <h1 class="card-title">Implementação Salesforce</h1>
@@ -404,7 +426,7 @@
           </div>
         </div>
         <!-- terceira col -->
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="card">
             <div class="container-img">
               <div class="base"></div>
@@ -418,7 +440,7 @@
           </div>
         </div>
         <!-- quarta col -->
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="card">
             <div class="container-img">
               <div class="base"></div>
@@ -447,7 +469,7 @@
             Impulsionamos as melhores estratégias com os melhores especialista do mercado
           </p>
         </div>
-        <div class="col-lg-1">
+        <div class="col-lg-1 col-md-6 col-sm-6 col-6">
           <ul>
             <li> Início </li>
             <li> Soluções </li>
@@ -455,7 +477,7 @@
             <li> Cases </li>
           </ul>
         </div>
-        <div class="col-lg-3 items">
+        <div class="col-lg-3 items col-md-6 col-sm-6 col-6">
           <ul>
             <li> Blog </li>
             <li> Trabalhe Conosco </li>
@@ -463,9 +485,10 @@
           </ul>
         </div>
         <div class="col-lg-3">
-          <a href="#" class="btn-footer">Entrar em Contato <img src="assets/img/arrow.svg" alt="Seta apontando para a direita">
+          <a href="#" class="btn-footer">Entrar em Contato <img src="assets/img/arrow.svg"
+              alt="Seta apontando para a direita">
           </a>
-          <p class="contact">
+          <p class="home">
             <img src="assets/img/uparrow.svg" alt="Seta apontando para cima"> Voltar ao topo
           </p>
         </div>
