@@ -109,6 +109,7 @@ body {
 }
 .site-nav .btn-nav:hover {
   color: #15E9BF;
+  border-color: white;
 }
 
 /* criei essa classe pq o 100vh estava no hero, acredito que o mais correto seria estar em todo o conteúdo inicial,
@@ -208,7 +209,7 @@ body {
   transition: color 0.2s ease;
 }
 .hero .btn-acess:hover {
-  border-color: #15E9BF;
+  border-color: white;
   color: #15E9BF;
 }
 .hero .btn-acess img {
@@ -354,7 +355,9 @@ body {
   margin-bottom: 16px;
 }
 .section-2 .card .btn-acess {
-  background: linear-gradient(90deg, #037C64, #0AB493) border-box;
+  background: linear-gradient(90deg, #037C64, #0AB493, #037C64);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -366,6 +369,10 @@ body {
   font-weight: 600;
   font-size: 1.2rem;
   white-space: nowrap;
+  transition: 1.2s;
+}
+.section-2 .card .btn-acess:hover {
+  background-position: 100% 0%;
 }
 .section-2 .card .notification {
   position: absolute;
@@ -463,7 +470,9 @@ body {
   padding: 0 2%;
 }
 .section-3 .btn-acess {
-  background: linear-gradient(90deg, #037C64, #0AB493) border-box;
+  background: linear-gradient(90deg, #037C64, #0AB493, #037C64);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
   color: #F5FFFD;
   text-decoration: none;
   padding: 1% 3%;
@@ -473,6 +482,10 @@ body {
   display: inline-flex;
   align-items: center;
   margin-bottom: 5%;
+  transition: 1.2s;
+}
+.section-3 .btn-acess:hover {
+  background-position: 100% 0%;
 }
 .section-3 .new-era-card {
   margin-left: 16px;
@@ -501,7 +514,9 @@ body {
   margin-top: 1.5%;
 }
 .section-3 .btn-acess {
-  background: linear-gradient(90deg, #037C64, #0AB493) border-box;
+  background: linear-gradient(90deg, #037C64, #0AB493, #037C64);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
   color: #F5FFFD;
   text-decoration: none;
   padding: 1% 3%;
@@ -511,6 +526,10 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  transition: 1.2s;
+}
+.section-3 .btn-acess:hover {
+  background-position: 100% 0%;
 }
 .section-3 .logo {
   display: flex;
@@ -701,7 +720,9 @@ body {
   max-height: 100%;
 }
 .section-5 .card .btn-acess {
-  background: linear-gradient(90deg, #037C64, #0AB493) border-box;
+  background: linear-gradient(90deg, #037C64, #0AB493, #037C64);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
   color: #F5FFFD;
   text-decoration: none;
   padding: 3% 6%;
@@ -712,6 +733,10 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
+  transition: 1.2s;
+}
+.section-5 .card .btn-acess:hover {
+  background-position: 100% 0%;
 }
 .section-5 .row {
   display: flex;

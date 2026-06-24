@@ -164,6 +164,7 @@ body {
 
     &:hover {
       color: $primary;
+      border-color: white;
     }
   }
 }
@@ -287,7 +288,7 @@ body {
     transition: color 0.2s ease;
 
     &:hover {
-      border-color: $primary;
+      border-color: white;
       color: $primary;
     }
 
@@ -325,7 +326,7 @@ body {
     margin-bottom: 36px;
   }
 
-  
+
 }
 
 .sec {
@@ -469,7 +470,9 @@ body {
 
     .btn-acess {
       background:
-        linear-gradient(90deg, $darkerprimary, $lightprimary) border-box;
+        linear-gradient(90deg, $darkerprimary, $lightprimary, $darkerprimary);
+      background-size: 200% 100%;
+      background-position: 0% 0%;
       display: flex;
       width: 100%;
       justify-content: space-between;
@@ -481,6 +484,11 @@ body {
       font-weight: 600;
       font-size: 1.2rem;
       white-space: nowrap;
+      transition: 1.2s;
+
+      &:hover {
+        background-position: 100% 0%;
+      }
 
     }
 
@@ -601,7 +609,9 @@ body {
 
   .btn-acess {
     background:
-      linear-gradient(90deg, $darkerprimary, $lightprimary) border-box;
+        linear-gradient(90deg, $darkerprimary, $lightprimary, $darkerprimary);
+      background-size: 200% 100%;
+      background-position: 0% 0%;
     color: $light;
     text-decoration: none;
     padding: 1% 3%;
@@ -611,8 +621,10 @@ body {
     display: inline-flex;
     align-items: center;
     margin-bottom: 5%;
-
-
+transition: 1.2s;
+      &:hover{
+        background-position: 100% 0%;
+      }
   }
 
   // ----------- card nova era salesforce ----------------
@@ -648,7 +660,9 @@ body {
 
   .btn-acess {
     background:
-      linear-gradient(90deg, $darkerprimary, $lightprimary) border-box;
+        linear-gradient(90deg, $darkerprimary, $lightprimary, $darkerprimary);
+      background-size: 200% 100%;
+      background-position: 0% 0%;
     color: $light;
     text-decoration: none;
     padding: 1% 3%;
@@ -658,8 +672,10 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-
-
+transition: 1.2s;
+      &:hover{
+        background-position: 100% 0%;
+      }
   }
 
   // cards laterais e logo jfox
@@ -886,7 +902,10 @@ body {
     }
 
     .btn-acess {
-      background: linear-gradient(90deg, $darkerprimary, $lightprimary) border-box;
+      background:
+        linear-gradient(90deg, $darkerprimary, $lightprimary, $darkerprimary);
+      background-size: 200% 100%;
+      background-position: 0% 0%;
       color: $light;
       text-decoration: none;
       padding: 3% 6%;
@@ -897,7 +916,11 @@ body {
       justify-content: space-between;
       align-items: center;
       margin-top: auto;
+transition: 1.2s;
 
+      &:hover {
+        background-position: 100% 0%;
+      }
 
     }
   }
