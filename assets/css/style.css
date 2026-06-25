@@ -51,6 +51,7 @@ body {
   display: block;
   text-decoration: none;
   padding: 10px 15px;
+  cursor: auto;
 }
 .site-nav .nav-item.dropdown .content a:hover {
   color: #15E9BF;
@@ -84,6 +85,7 @@ body {
   display: block;
   text-decoration: none;
   padding: 10px 15px;
+  cursor: auto;
 }
 .site-nav .dropdown .content a:hover {
   color: #15E9BF;
@@ -207,6 +209,7 @@ body {
   font-weight: 700;
   font-size: 1.4rem;
   transition: color 0.2s ease;
+  cursor: pointer;
 }
 .hero .btn-acess:hover {
   border-color: white;
@@ -231,6 +234,7 @@ body {
 .body-section a {
   color: #037C64;
   text-decoration: none;
+  cursor: auto;
 }
 .body-section .body-section-title {
   color: #010F0C;
@@ -309,6 +313,7 @@ body {
   color: #06997C;
   text-decoration: none;
   font-weight: bolder;
+  cursor: auto;
 }
 .section-2 .section-2-title {
   color: #010F0C;
@@ -343,6 +348,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  transition: 0.6s;
 }
 .section-2 .card .card-title {
   color: #010F0C;
@@ -370,6 +376,7 @@ body {
   font-size: 1.2rem;
   white-space: nowrap;
   transition: 1.2s;
+  cursor: pointer;
 }
 .section-2 .card .btn-acess:hover {
   background-position: 100% 0%;
@@ -391,6 +398,8 @@ body {
 }
 .section-2 .card .notification img {
   height: 1.7rem;
+  transform-origin: top center;
+  animation: bell 1s 1s both infinite;
 }
 .section-2 .card .notification::after {
   content: "";
@@ -402,8 +411,47 @@ body {
   height: 14px;
   background-color: #06997C;
   border-radius: 999px;
+  animation: zoom 2s 3s both infinite;
+  transform-origin: center center;
+}
+.section-2 .card:hover {
+  transform: translateY(-5%);
 }
 
+@keyframes bell {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+  80% {
+    transform: rotate(0);
+  }
+  90% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.4);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .section-3 {
   margin-top: -1%;
   background: #F3F5F7;
@@ -420,6 +468,7 @@ body {
   color: #06997C;
   text-decoration: none;
   font-weight: bolder;
+  cursor: auto;
 }
 .section-3 .section-3-title {
   color: #010F0C;
@@ -447,6 +496,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.6s;
 }
 .section-3 .card .card-title {
   background: linear-gradient(180deg, #037C64, #0AB493);
@@ -469,6 +519,9 @@ body {
   margin-bottom: 0px;
   padding: 0 2%;
 }
+.section-3 .card:hover {
+  transform: translateY(-5%);
+}
 .section-3 .btn-acess {
   background: linear-gradient(90deg, #037C64, #0AB493, #037C64);
   background-size: 200% 100%;
@@ -483,6 +536,7 @@ body {
   align-items: center;
   margin-bottom: 5%;
   transition: 1.2s;
+  cursor: pointer;
 }
 .section-3 .btn-acess:hover {
   background-position: 100% 0%;
@@ -527,6 +581,7 @@ body {
   align-items: center;
   gap: 10px;
   transition: 1.2s;
+  cursor: pointer;
 }
 .section-3 .btn-acess:hover {
   background-position: 100% 0%;
@@ -560,6 +615,10 @@ body {
   display: flex;
   font-size: 1rem;
   font-weight: 600;
+  transition: 0.6s;
+}
+.section-3 .subcards-wrap .subcard:hover {
+  transform: translateY(-15%);
 }
 .section-3 .subcards-wrap .subcard span {
   font-weight: bold;
@@ -589,6 +648,9 @@ body {
   font-weight: 700;
   font-size: 2.2rem;
 }
+.section-4 .cards-container {
+  perspective: 1500px;
+}
 .section-4 .card {
   width: 100%;
   background: #0D1412;
@@ -597,6 +659,10 @@ body {
   display: grid;
   grid-template-columns: 33% 3fr;
   margin-bottom: 6%;
+  transition: 0.6s;
+}
+.section-4 .card:hover {
+  transform: rotateY(-12deg);
 }
 .section-4 .left-panel {
   position: relative;
@@ -604,6 +670,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.6s;
+}
+.section-4 .left-panel:hover {
+  background: #17221f;
 }
 .section-4 .number {
   border-radius: 8px 1px 2px 1px;
@@ -673,6 +743,7 @@ body {
   color: #06997C;
   text-decoration: none;
   font-weight: bolder;
+  cursor: auto;
 }
 .section-5 .card {
   border: none;
@@ -682,6 +753,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  transition: 0.6s;
+}
+.section-5 .card:hover {
+  transform: translateY(5%);
 }
 .section-5 .card .card-title {
   font-weight: 900;
@@ -734,6 +809,7 @@ body {
   align-items: center;
   margin-top: auto;
   transition: 1.2s;
+  cursor: pointer;
 }
 .section-5 .card .btn-acess:hover {
   background-position: 100% 0%;

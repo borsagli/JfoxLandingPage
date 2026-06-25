@@ -85,6 +85,7 @@ body {
         display: block;
         text-decoration: none;
         padding: 10px 15px;
+        cursor:auto;
 
         &:hover {
           color: $primary;
@@ -130,6 +131,7 @@ body {
         display: block;
         text-decoration: none;
         padding: 10px 15px;
+        cursor:auto;
 
         &:hover {
           color: $primary;
@@ -286,6 +288,7 @@ body {
     font-weight: 700;
     font-size: 1.4rem;
     transition: color 0.2s ease;
+      cursor:pointer;
 
     &:hover {
       border-color: white;
@@ -317,6 +320,7 @@ body {
   a {
     color: $darkerprimary;
     text-decoration: none;
+    cursor:auto;
   }
 
   .body-section-title {
@@ -415,6 +419,7 @@ body {
     color: $mediumprimary;
     text-decoration: none;
     font-weight: bolder;
+    cursor:auto;
   }
 
   .section-2-title {
@@ -455,6 +460,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    transition: 0.6s;
 
     .card-title {
       color: $darkfont;
@@ -485,6 +491,7 @@ body {
       font-size: 1.2rem;
       white-space: nowrap;
       transition: 1.2s;
+      cursor:pointer;
 
       &:hover {
         background-position: 100% 0%;
@@ -510,6 +517,8 @@ body {
 
       img {
         height: 1.7rem;
+        transform-origin: top center;
+        animation: bell 1s 1s both infinite;
       }
 
       &::after {
@@ -522,9 +531,62 @@ body {
         height: 14px;
         background-color: $mediumprimary;
         border-radius: 999px;
+        animation: zoom 2s 3s both infinite;
+        transform-origin: center center;
       }
     }
+
+    &:hover {
+      transform: translateY(-5%);
+    }
   }
+
+}
+
+//keyframes animaçao de notificacao
+@keyframes bell {
+  0% {
+    transform: rotate(0);
+  }
+
+  10% {
+    transform: rotate(30deg);
+  }
+
+  20% {
+    transform: rotate(0);
+  }
+
+  80% {
+    transform: rotate(0);
+  }
+
+  90% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1.4);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
 
 }
 
@@ -547,6 +609,7 @@ body {
     color: $mediumprimary;
     text-decoration: none;
     font-weight: bolder;
+    cursor:auto;
   }
 
   .section-3-title {
@@ -580,6 +643,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.6s;
 
     .card-title {
       background: linear-gradient(180deg, $darkerprimary, $lightprimary);
@@ -605,13 +669,17 @@ body {
       margin-bottom: 0px;
       padding: 0 2%;
     }
+
+    &:hover {
+      transform: translateY(-5%);
+    }
   }
 
   .btn-acess {
     background:
-        linear-gradient(90deg, $darkerprimary, $lightprimary, $darkerprimary);
-      background-size: 200% 100%;
-      background-position: 0% 0%;
+      linear-gradient(90deg, $darkerprimary, $lightprimary, $darkerprimary);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
     color: $light;
     text-decoration: none;
     padding: 1% 3%;
@@ -621,10 +689,12 @@ body {
     display: inline-flex;
     align-items: center;
     margin-bottom: 5%;
-transition: 1.2s;
-      &:hover{
-        background-position: 100% 0%;
-      }
+    transition: 1.2s;
+      cursor:pointer;
+
+    &:hover {
+      background-position: 100% 0%;
+    }
   }
 
   // ----------- card nova era salesforce ----------------
@@ -660,9 +730,9 @@ transition: 1.2s;
 
   .btn-acess {
     background:
-        linear-gradient(90deg, $darkerprimary, $lightprimary, $darkerprimary);
-      background-size: 200% 100%;
-      background-position: 0% 0%;
+      linear-gradient(90deg, $darkerprimary, $lightprimary, $darkerprimary);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
     color: $light;
     text-decoration: none;
     padding: 1% 3%;
@@ -672,10 +742,12 @@ transition: 1.2s;
     display: inline-flex;
     align-items: center;
     gap: 10px;
-transition: 1.2s;
-      &:hover{
-        background-position: 100% 0%;
-      }
+    transition: 1.2s;
+      cursor:pointer;
+
+    &:hover {
+      background-position: 100% 0%;
+    }
   }
 
   // cards laterais e logo jfox
@@ -709,6 +781,11 @@ transition: 1.2s;
       display: flex;
       font-size: 1rem;
       font-weight: 600;
+      transition: 0.6s;
+
+      &:hover {
+        transform: translateY(-15%);
+      }
 
       span {
         font-weight: bold;
@@ -746,6 +823,9 @@ transition: 1.2s;
   }
 
   //CARDS 
+  .cards-container {
+  perspective: 1500px;
+}
   .card {
     width: 100%;
     background: $darkcard;
@@ -754,6 +834,10 @@ transition: 1.2s;
     display: grid;
     grid-template-columns: 33% 3fr;
     margin-bottom: 6%;
+    transition: 0.6s;
+    &:hover{
+    transform: rotateY(-12deg);
+    }
   }
 
   // painel esquerdo do card
@@ -763,6 +847,11 @@ transition: 1.2s;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.6s;
+    &:hover{
+        background: #17221f;;
+
+    }
   }
 
   .number {
@@ -845,6 +934,7 @@ transition: 1.2s;
     color: $mediumprimary;
     text-decoration: none;
     font-weight: bolder;
+   cursor:auto;
   }
 
   //cards
@@ -856,7 +946,12 @@ transition: 1.2s;
     display: flex;
     flex-direction: column;
     height: 100%;
+    transition: 0.6s;
+&:hover {
+      transform: translateY(5%);
+            
 
+    }
     .card-title {
       font-weight: 900;
       color: $dark;
@@ -916,7 +1011,8 @@ transition: 1.2s;
       justify-content: space-between;
       align-items: center;
       margin-top: auto;
-transition: 1.2s;
+      transition: 1.2s;
+      cursor:pointer;
 
       &:hover {
         background-position: 100% 0%;
