@@ -337,6 +337,12 @@ body {
   color: #010F0C;
   font-size: 18px;
   margin-bottom: 10px;
+  transition: 1s;
+}
+.section-2 ul li:hover {
+  cursor: pointer;
+  color: #0c1614;
+  transform: translateY(-5%);
 }
 .section-2 ul li::marker {
   color: #EF4444;
@@ -763,7 +769,7 @@ body {
   transition: 0.6s;
 }
 .section-5 .card:hover {
-  transform: translateY(5%);
+  transform: translateY(2%);
 }
 .section-5 .card .card-title {
   font-weight: 900;
@@ -925,6 +931,10 @@ footer .design {
 footer .design img {
   padding-left: 0.8rem;
   max-width: 5rem;
+  transition: 0.6s;
+}
+footer .design img:hover {
+  transform: translateY(-10%);
 }
 
 /*----------------------- RESPONSIVIDADE -----------------------
