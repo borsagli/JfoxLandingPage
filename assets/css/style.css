@@ -57,7 +57,7 @@ body {
   display: block;
   text-decoration: none;
   padding: 10px 15px;
-  cursor: auto;
+  cursor: pointer;
 }
 .site-nav .nav-item.dropdown .content ul li a:hover {
   color: #15E9BF;
@@ -80,10 +80,11 @@ body {
   display: none;
   background: linear-gradient(#000504, #0c1614) padding-box, linear-gradient(90deg, rgba(211, 211, 211, 0.3882352941), #0c1614, rgba(211, 211, 211, 0.3882352941), rgba(2, 23, 19, 0.2)) border-box;
   border: 1px solid #15E9BF;
+  border-top: none;
   border-radius: 0px 0px 16px 16px;
   padding: 0;
   position: absolute;
-  top: calc(100% + 5px);
+  top: calc(100% + 2px);
   left: 0;
   transform: translateX(25%);
 }
@@ -97,6 +98,7 @@ body {
 .site-nav .dropdown .content a:hover {
   color: #15E9BF;
   transition: 0.5s;
+  cursor: pointer;
 }
 .site-nav .dropdown:hover .content {
   display: block;
