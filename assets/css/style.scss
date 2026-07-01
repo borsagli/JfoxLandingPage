@@ -821,6 +821,13 @@ body {
 
 .section-4 {
   padding: 6% 8% 4%;
+ align-items: flex-start;
+ 
+  .col-lg-6:first-child {
+    position: sticky;
+    top: 100px; 
+    height: fit-content;
+  }
 
   .section-4-p {
     background: linear-gradient(180deg, $primary 0%, $lightprimary 100%);

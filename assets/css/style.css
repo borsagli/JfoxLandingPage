@@ -645,6 +645,13 @@ body {
 
 .section-4 {
   padding: 6% 8% 4%;
+  align-items: flex-start;
+}
+.section-4 .col-lg-6:first-child {
+  position: sticky;
+  top: 100px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .section-4 .section-4-p {
   background: linear-gradient(180deg, #15E9BF 0%, #0AB493 100%);
