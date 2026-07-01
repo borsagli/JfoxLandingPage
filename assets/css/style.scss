@@ -93,11 +93,12 @@ body {
             display: block;
             text-decoration: none;
             padding: 10px 15px;
-            cursor: auto;
+            
 
             &:hover {
               color: $primary;
               transition: 0.3s;
+              cursor: pointer;
               transform: translateY(-10%);
             }
           }
@@ -110,9 +111,9 @@ body {
       z-index: 999;
     }
 
-  } 
-  
-@media (min-width: 992px) {
+  }
+
+  @media (min-width: 992px) {
     .navbar-collapse {
       display: flex;
       justify-content: space-between;
@@ -136,11 +137,12 @@ body {
         linear-gradient($dark, $darkblue) padding-box,
         linear-gradient(90deg, $lightgrey, $darkblue, $lightgrey, $greyblue) border-box;
       border: 1px solid $primary;
+        border-top: none;
       border-radius: 0px 0px 16px 16px;
       padding: 0;
       position: absolute;
       // background-color: red;
-      top: calc(100% + 5px);
+      top: calc(100% + 2px);
       left: 0;
       transform: translateX(25%);
 
@@ -149,7 +151,7 @@ body {
         display: block;
         text-decoration: none;
         padding: 10px 15px;
-        cursor: auto;
+        cursor: pointer;
 
         &:hover {
           color: $primary;
@@ -829,11 +831,11 @@ body {
 
 .section-4 {
   padding: 6% 8% 4%;
- align-items: flex-start;
+  align-items: flex-start;
 
   .col-lg-6:first-child {
     position: sticky;
-    top: 100px; 
+    top: 100px;
     height: fit-content;
   }
 
@@ -1477,6 +1479,9 @@ footer {
       margin-bottom: 5%;
       font-size: 2.3rem;
     }
+     .col-lg-6:first-child {
+    position: unset;
+  }
   }
 
   // ------------------ RESPONSIVIDADE SEÇAO 5 --------------------
