@@ -68,8 +68,15 @@ body {
   display: block;
   z-index: 999;
 }
+@media (min-width: 992px) {
+  .site-nav .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .site-nav .nav-actions {
   display: flex;
+  align-items: flex-end;
   gap: 16px;
   padding-left: 4%;
 }
